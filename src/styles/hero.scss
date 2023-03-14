@@ -1,0 +1,76 @@
+@import "common.scss";
+.hero {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+
+
+    &__section-title {
+      margin-bottom: 13px;
+    }
+  
+    &__descr {
+      margin: 0;
+      font-family: "Roboto", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: $colorLight;
+    }
+  
+    &__title {
+      margin-bottom: 18px;
+      max-width: 435px;
+      line-height: 104%;
+    }
+  
+    &__topspan {
+      position: absolute;
+      padding: 8px 14px;
+      top: 15px;
+      right: 15px;
+      font-family: "Roboto", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      background-color: $colorDark;
+      color: $colorLight;
+    }
+  }
+
+  .hero-one {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-top: 400px;
+    padding-right: calc(4px + 134 * (100vw - 1024px)/ 896);
+    padding-bottom: calc(8px + 30 * (100vw - 1024px)/ 896);
+    padding-left: calc(30px + 30 * (100vw - 1024px)/ 896);
+    background: url("../images/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+  }
+
+  .hero-two{
+    display: grid;
+    column-gap: 30px;
+    row-gap: 32px;
+  }
+  
+  .hero-two__works {
+    grid-column: span 2;
+  }
+  
+  .hero-two__img {
+    display: flex;
+  }
+  
+  .hero-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2;
+    gap: 30px;
+  }
+  
+  

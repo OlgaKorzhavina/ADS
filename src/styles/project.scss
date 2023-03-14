@@ -1,0 +1,258 @@
+@import "common.scss";
+
+.projects {
+  @include marginBlock;
+}
+
+.projects__title,
+.contacts__title {
+  color: $colorDark;
+}
+
+
+
+.btn-stoke {
+  cursor: pointer;
+  border: none;
+  padding: 14px 22px;
+  color: $colorLight;
+  background-color: transparent;
+  outline: solid 3px $colorBtn;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn-stoke:hover{
+  background-color: $colorBtn;
+  transition: background-color 0.3s;
+}
+
+.btn-stoke:focus{
+  background-color: $bgFocus;
+  outline: 3px solid $colorBtn;
+  transition: background-color 0.3s;
+}
+
+.btn-stoke:active{
+  background-color: $bgActive;
+  transition: background-color 0.3s;
+}
+
+.title {
+  font-family: "TT Firs Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: $colorLight;
+}
+
+.projects__title {
+  @include marginTitle;
+}
+
+.project-up {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.project-down {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.project-cards {
+  display: grid;
+  row-gap: calc(15px + 16 * ((100vw - 1024px) / 896));
+}
+
+.project-card {
+  &__item {
+    position: relative;
+  }
+
+  &__span {
+    grid-column: span 1;
+    position: absolute;
+    position: absolute;
+    padding: 7px 14px;
+    top: 4px;
+    right: 7px;
+    font-size: 14px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+    background-color: $colorDark;
+    color: $colorLight;
+
+   
+  }
+
+  &__descr {
+    @include cardDescr;
+  }
+
+  &__date {
+    @include date;
+  }
+
+ 
+}
+
+.project-img,
+.project-hidden {
+  position: relative;
+  align-items: start;
+
+  &__span {
+    position: absolute;
+    padding: 2px 14px;
+    top: 10px;
+    right: 8px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    background-color: $colorDark;
+    color: $colorLight;
+  }
+}
+
+.project-img__topspan {
+  position: absolute;
+  padding: 7px 15px;
+  top: 15px;
+  right: 15px;
+  background-color: $colorDark;
+  color: $colorLight;
+}
+
+.project-img__leftspan,
+.project-hidden__leftspan {
+  position: absolute;
+  padding-top: 24px;
+  left: 30px;
+
+  span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $colorLight;
+  }
+
+  h1 {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+ p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorLight;
+  }
+}
+
+.project-card__visible{
+  display: none;
+}
+
+.fuji{
+  h1 {
+    width: 40%;
+    padding: 3px 0 5px;
+  }
+  p {
+    width: 50%;
+    margin-bottom: 55px;
+  }
+
+}
+
+.mind {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  justify-content: space-between;
+  background-image: url("../images/project5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+h1{
+  padding: 3px 0 5px;
+}
+p{
+  width: 70%;
+  margin-bottom: 101px;
+}
+
+}
+
+
+
+.fuji,
+.project-hidden {
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 3;
+  justify-content: space-between;
+  background-image: url("../images/project4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects__content {
+  width: 50%;
+}
+
+
+
+.project-hidden {
+  display: none;
+}
+
+.project-last {
+  position: relative;
+  grid-column: span 1;
+  gap: 30px;
+  align-items: start;
+
+  &__span {
+    @include span;
+    position: absolute;
+    padding: 8px 14px;
+    top: 5px;
+    right: 6px;
+    font-size: 14px;
+    background-color: $colorDark;
+  }
+
+  &__descr {
+    @include cardDescr;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__date {
+    @include date;
+  }
+}
+
+.project-last__picture img{
+  display: flex;
+width: 100%;
+}

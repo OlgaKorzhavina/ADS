@@ -1,0 +1,65 @@
+@import "common.scss";
+
+footer {
+  margin-top: 69px;
+  background-color: $colorDark;
+}
+
+.footer-hidden{
+  display: none;
+}
+.footer {
+  margin: 0 auto;
+  padding-top: 24px;
+  height: 106px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: $colorLight;
+  gap: 30px;
+  align-items: start;
+
+  &__descr {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $colorInput;
+  }
+}
+
+.footer__center {
+  width: 89%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $colorLightGray;
+}
+
+.footer__right {
+  margin-top: -2px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: $colorLightGray;
+  justify-self: flex-end;
+}
+
+.footer-social {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 4px;
+
+  &__link path{
+    fill: $colorLightGray;
+  }
+  &__link:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.footer-social__link svg path:hover{
+fill: $colorBtn;
+}

@@ -1,0 +1,164 @@
+@import "common.scss";
+
+.about-section {
+  margin-top: 67px;
+    @include marginBlock;
+    background-color: $colorDark;
+  }
+  
+  .about {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,calc(50% - 15px));
+    justify-content: space-between;
+    padding-top: 29px;
+    padding-bottom: 70px;
+    gap: 30px;
+    background-color: $colorDark;
+    justify-items: start;
+  }
+
+  .about-left{
+      
+    &__title {
+      margin-bottom: 3px;
+      color: $colorLight;
+    }
+  
+    &__descr {
+      color: $colorLightGray;
+      padding-top: 5px;
+    }
+  }
+
+  .about-right{
+    width: 100%;
+  
+    &__title {
+      margin-bottom: -10px;
+      color: $colorLight;
+    }
+  
+    &__descr {
+      color: $colorLightGray;
+      padding-top: 5px;
+    }
+
+  
+    &__form {
+      margin: 0;
+      color: $colorLight;
+    }
+  
+    &__img {
+      margin-top: 33px;
+      position: relative;
+      padding-top: 251px;
+    margin-bottom: 23px;
+    }
+  
+    &__img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/about.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about-wrapper{
+    margin-top: 24px;
+    display: flex;
+&__input {
+  position: relative;
+    margin-right: 30px;
+    flex-grow: 1;
+  border: none;
+  padding: 15px 23px;
+  width: 100%;
+  background-color: $colorGraphit;
+}
+
+&__input::placeholder {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+&__btn{
+  width: 126px;
+}
+  }
+
+
+  .about-wrapper__input{
+    color: $colorLight;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  
+  
+  .about-wrapper__input:hover::placeholder{
+    color: $colorBtn;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  
+  .about-wrapper__input:focus{
+    outline: 1px solid $colorBtn;
+    color: $colorLight;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .about-wrapper__input:active{
+    outline: none;
+    color: $colorLight;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  
+  
+  .btn {
+    cursor: pointer;
+    border: none;
+    padding: 15px 22px;
+    color: $colorLight;
+    background-color: $colorBtn;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .btn:hover{
+background-color: $bgFocus;
+transition: background-color 0.3s;
+  }
+
+  .btn:focus{
+    background-color: $colorBtn;
+outline: 3px solid $bgFocus;
+    transition: background-color 0.3s;
+  }
+
+  .btn:active{
+    background-color: $bgActive;
+    transition: background-color 0.3s;
+  }

@@ -1,0 +1,106 @@
+$colorDark: #202020;
+$colorLight: #ffffff;
+$colorLightGray: #cacaca;
+$colorGraphit: #4a4a4a;
+$colorInput: #e9e9e9;
+$colorBtn: #ff6e30;
+$colorDescr: #999999;
+$bgFocus: #BC572B;
+$bgActive:#CE4307;
+$colorError:#FF3030;
+
+
+@font-face {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 400;
+    src: local("TTFirsNeue-Regular"),
+      url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"),
+      url("../fonts/TTFirsNeue-Regular.woff") format("woff"),
+      url("../fonts/TTFirsNeue-Regular.ttf") format("ttf");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 700;
+    src: local("TTFirsNeue-Bold"),
+      url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"),
+      url("../fonts/TTFirsNeue-Bold.woff") format("woff"),
+      url("../fonts/TTFirsNeue-Bold.ttf") format("ttf");
+
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("OpenSans-Bold"),
+      url("../fonts/Roboto-Regular.woff2") format("woff2"),
+      url("../fonts/Roboto-Regular.woff") format("woff"),
+      url("../fonts/Roboto-Regular.ttf") format("ttf");
+
+    font-display: swap;
+  }
+  
+  
+  @mixin list-reset {
+    margin: 0;
+    padding: 21px 0;
+    list-style: none;
+  }
+  
+  @mixin maxWeight {
+    max-width: 1290px;
+  }
+  
+  @mixin clear-margin {
+    margin: 0;
+  }
+  
+  @mixin marginBlock {
+    margin-bottom: 70px;
+  }
+  
+  @mixin span {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $colorLight;
+  }
+  
+  @mixin date {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: $colorDescr;
+  }
+  
+  @mixin cardDescr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorDark;
+  }
+  
+  @mixin txtareaInput {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  @mixin marginTitle {
+    margin-bottom: 15px;
+  }
+
+  @mixin tabletWidth{
+    max-width: 963px;
+  }

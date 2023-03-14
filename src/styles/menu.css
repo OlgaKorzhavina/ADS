@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"), url("../fonts/TTFirsNeue-Regular.woff") format("woff"), url("../fonts/TTFirsNeue-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: local("TTFirsNeue-Bold"), url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"), url("../fonts/TTFirsNeue-Bold.woff") format("woff"), url("../fonts/TTFirsNeue-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans-Bold"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+.grid-nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  margin-right: 30px;
+  font-family: "TT Firs Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.burger {
+  display: none;
+}
+
+.header-submenu {
+  display: none;
+}
+
+.header {
+  margin: auto;
+  background-color: #202020;
+}
+
+.burger-close {
+  display: none;
+}
+
+.burger-close--active {
+  display: block;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.header__nav {
+  margin: 0;
+  padding: 21px 0;
+  list-style: none;
+  padding: 23px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.header-content {
+  padding: 13px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__search__img {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__search__img--active {
+  display: none;
+}
+
+.header-content__logo {
+  margin-right: 295px;
+  cursor: pointer;
+}
+
+.header-content__logo:focus {
+  background-color: transparent;
+}
+
+.header-list {
+  padding: 0;
+  margin-left: 23px;
+}
+.header-list li {
+  margin-right: 49px;
+}
+
+.header-list li a:hover {
+  color: #ff6e30;
+  transition: color 0.3s;
+}
+
+.header-list li a:focus {
+  background-color: #BC572B;
+  color: #e9e9e9;
+  transition: color 0.3s;
+}
+
+.header-list li a:active {
+  background-color: transparent;
+  color: #CE4307;
+  transition: color 0.3s;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-form__input {
+  position: absolute;
+  height: 30px;
+  margin: auto;
+  width: 0;
+  right: 0;
+  margin: -17px -3px auto auto;
+  padding: 16px 118px 16px 32px;
+  border: none;
+  border-radius: none;
+  overflow: hidden;
+  opacity: 0;
+  transition: width 0.3s;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-form__input::-moz-placeholder {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-form__input::placeholder {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.search-form__input--active {
+  background-color: #202020;
+  color: #e9e9e9;
+  border-bottom: solid 1px #e9e9e9;
+  opacity: 1;
+  width: 539px;
+}
+
+.search-form__input--active:focus {
+  background-color: #202020;
+  color: #e9e9e9;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #ff6e30;
+}
+
+.search-form__input--active:hover {
+  background-color: #202020;
+  color: #e9e9e9;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #ff6e30;
+}
+
+.search-form__input--active:active {
+  background-color: #202020;
+  color: #e9e9e9;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #CE4307;
+}
+
+.search-form__close {
+  position: absolute;
+  display: none;
+  margin-top: -10px;
+  margin-left: -18px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 170;
+}
+
+.search-form__close--active {
+  display: block;
+}/*# sourceMappingURL=menu.css.map */
