@@ -20,7 +20,6 @@
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-    color: $colorLight;
   }
   
   .burger {
@@ -33,7 +32,7 @@
   
   .header {
     margin: auto;
-    background-color: $colorDark;
+    background-color: $Grafit;
   }
 
  .burger-close{
@@ -90,13 +89,10 @@
   }
 
   .header-list li a:hover{
-    color:$colorBtn;
     transition: color 0.3s;
   }
 
   .header-list li a:focus{
-    background-color: $bgFocus;
-    color:$colorInput;
     transition: color 0.3s;
   }
 
@@ -139,35 +135,23 @@ line-height: 21px;
   }
   
   .search-form__input--active {
-    background-color: $colorDark;
-    color: $colorInput;
-    border-bottom: solid 1px $colorInput;
     opacity: 1;
     width: 539px;
   }
   
   .search-form__input--active:focus {
-    background-color: $colorDark;
-    color: $colorInput;
     border: none;
     outline: none;
-    border-bottom: solid 1px $colorBtn;
   }
 
   .search-form__input--active:hover {
-    background-color: $colorDark;
-    color: $colorInput;
     outline: none;
     border: none;
-    border-bottom: solid 1px $colorBtn;
   }
 
   .search-form__input--active:active {
-    background-color: $colorDark;
-    color: $colorInput;
     border: none;
     outline: none;
-    border-bottom: solid 1px $bgActive;
   }
 
  
