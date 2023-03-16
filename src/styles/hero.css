@@ -1,90 +1,24 @@
 @font-face {
-  font-family: "TT Firs Neue";
+  font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("TTFirsNeue-Regular"), url("../fonts/TTFirsNeue-Regular.woff2") format("woff2"), url("../fonts/TTFirsNeue-Regular.woff") format("woff"), url("../fonts/TTFirsNeue-Regular.ttf") format("ttf");
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "TT Firs Neue";
+  font-family: "Montserrat Medium";
   font-style: normal;
-  font-weight: 700;
-  src: local("TTFirsNeue-Bold"), url("../fonts/TTFirsNeue-Bold.woff2") format("woff2"), url("../fonts/TTFirsNeue-Bold.woff") format("woff"), url("../fonts/TTFirsNeue-Bold.ttf") format("ttf");
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Montserrat Semibold";
   font-style: normal;
-  font-weight: 400;
-  src: local("OpenSans-Bold"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
   font-display: swap;
 }
 .hero {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-}
-.hero__section-title {
-  margin-bottom: 13px;
-}
-.hero__descr {
-  margin: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-}
-.hero__title {
-  margin-bottom: 18px;
-  max-width: 435px;
-  line-height: 104%;
-}
-.hero__topspan {
-  position: absolute;
-  padding: 8px 14px;
-  top: 15px;
-  right: 15px;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  background-color: #202020;
-  color: #ffffff;
-}
-
-.hero-one {
-  width: 100%;
-  display: flex;
-  position: relative;
-  padding-top: 400px;
-  padding-right: calc(4px + 134 * (100vw - 1024px) / 896);
-  padding-bottom: calc(8px + 30 * (100vw - 1024px) / 896);
-  padding-left: calc(30px + 30 * (100vw - 1024px) / 896);
-  background: url("../images/1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-self: center;
-}
-
-.hero-two {
-  display: grid;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 32px;
-}
-
-.hero-two__works {
-  grid-column: span 2;
-}
-
-.hero-two__img {
-  display: flex;
-}
-
-.hero-bottom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column: span 2;
-  gap: 30px;
+  background-image: url("/src/images/hero1920.jpg");
 }/*# sourceMappingURL=hero.css.map */

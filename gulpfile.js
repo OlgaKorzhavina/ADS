@@ -3,7 +3,6 @@ const concat =require('gulp-concat');
 const htmlMin = require ('gulp-htmlmin');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require ('gulp-clean-css');
-const svgSprite = require ('gulp-svg-sprite');
 const image = require ('gulp-image');
 const uglify = require('gulp-uglify-es').default;
 const babel = require('gulp-babel');
@@ -15,6 +14,14 @@ const browserSync = require('browser-sync').create();
 const clean = () =>{
     return del(['dist'])
 };
+
+const fonts =() =>{
+    return src ([
+        'src/fonts/**/*.woff',
+    'src/fonts/**/*woff2',
+    'src/fonts/**/*ttf'])
+    .pipe(dest('dist/fonts'))
+}
 
 const resources = () =>{
     return src('src/resources/**')
@@ -56,22 +63,16 @@ const images = () =>{
     .pipe(dest('dist/images'))
 };
 
-const svgSprites = () =>{
-    return src ('src/images/svg/**/*.svg')
-    .pipe(svgSprite({
-        mode:{
-            stack:{
-                sprite:'../sprite.svg'
-            }
-        }
-    }))
-    .pipe(dest('dist/images'))
-};
+const svg =() =>{
+    return src('src/images/**/*.svg')
+    .pipe(image())
+    .pipe(dest('dist/images/svg'))
+}
 
 const scripts = () =>{
     return src([
         'src/js/components/**/*.js',
-        'src/js/main.js'
+        'src/js/components/**/*.min.js',
     ])
     .pipe(sourcemaps.init())
     .pipe(babel({
@@ -94,7 +95,6 @@ server:{
 
 watch('src/**/*.html', htmlMinify);
 watch('src/styles/**/*.css', styles);
-watch('src/images/svg/**/*.svg', svgSprites);
 watch('src/js/**/*.js', scripts);
 watch('src/resources/**', resources);
 
@@ -102,7 +102,8 @@ exports.clean = clean
 exports.styles = styles
 exports.scripts = scripts
 exports.htmlMinify = htmlMinify
-exports.default = series(clean, resources, htmlMinify, scripts, styles, images, svgSprites, watchFiles)
+exports.fonts = fonts
+exports.default = series(clean, resources, htmlMinify, scripts, styles, fonts, images, svg, watchFiles)
 
 
 
@@ -126,6 +127,13 @@ const stylesBuild =() =>{
     .pipe(dest('dist'))
 };
 
+const fontsBuild =() =>{
+    return src ([
+        'src/fonts/**/*.woff',
+    'src/fonts/**/*woff2'])
+    .pipe(dest('dist'))
+}
+
 const scriptsBuild = () =>{
     return src([
         'src/js/components/**/*.js',
@@ -139,4 +147,4 @@ const scriptsBuild = () =>{
     .pipe(dest('dist'))
 };
 
-exports.build = series(clean, resources, htmlMinifyBuild, scriptsBuild, stylesBuild, images, svgSprites);
+exports.build = series(clean, resources, htmlMinifyBuild, scriptsBuild, fontsBuild, stylesBuild, images, svg);
