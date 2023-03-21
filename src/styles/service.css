@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.service {
+  margin-bottom: 100px;
+  padding-top: 50px;
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-wrapper__middle {
+  background-image: url("../images/service.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-wrapper__right {
+  padding-bottom: 70px;
+}
+.service-wrapper__right ul {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  list-style: none;
+}/*# sourceMappingURL=service.css.map */

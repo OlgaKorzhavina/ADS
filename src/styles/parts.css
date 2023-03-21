@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.parts {
+  margin-bottom: 100px;
+}
+
+.parts-cards {
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.parts-cards__item {
+  display: flex;
+  justify-content: center;
+  padding: 26px 32px 40px 32px;
+  background-color: #E7E7E7;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.parts-cards__descr p {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #FFF500;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px 10px;
+}
+
+.parts-cards__item:hover {
+  border: 1px solid #FFF500;
+  box-shadow: 4px 4px 6px -1px #929292, -4px 4px 6px -1px #929292;
+  transform: scale(1.2);
+}
+
+.four-item__hidden {
+  display: none;
+}
+
+.parts-btn {
+  padding: 25px 50px;
+  border-radius: 50px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
+.parts-btn:hover {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  color: #2B2B2B;
+}
+
+.parts-card__hidden {
+  height: 0;
+  display: none;
+  transition: height 0.3s;
+}
+
+.parts-card__hidden--visible {
+  display: grid;
+  height: 100%;
+}/*# sourceMappingURL=parts.css.map */

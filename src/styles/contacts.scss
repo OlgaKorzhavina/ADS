@@ -1,0 +1,104 @@
+@import "common.scss";
+
+.contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contacts-wrapper__item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    a {
+        padding-top: 30px;
+        font-family: 'Montserrat Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 37px;
+        color: $Grafit;
+        text-decoration: none;
+    }
+}
+
+input {
+    margin-right: 30px;
+    align-items: center;
+    padding: 21px 35px;
+    background-color: $snowWhite;
+    border: 1px solid $Grafit;
+    border-radius: 50px;
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.contacts-form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-form__btn {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 20px 70px;
+    background-color: $yellowAmber;
+    border: none;
+    border-radius: 50px;
+    color: $Grafit;
+}
+
+.contacts-form__btn:hover {
+    background-color: $Grafit;
+    border: none;
+    border-radius: 50px;
+    color: $snowWhite;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.just-validate-error-field{
+    position: relative;
+}
+
+.just-validate-error-label{
+    margin-top: -65px;
+    margin-left: 37px;
+    font-size: 12px!important;
+}
+
+.ymaps-2-1-79-float-button-icon,
+.ymaps-2-1-79-float-button-icon_icon_geolocation,
+.ymaps-2-1-79-controls__control_toolbar,
+.ymaps-2-1-79-searchbox,
+.ymaps-2-1-79-scaleline,
+.ymaps-2-1-79-zoom,
+.ymaps-2-1-79-float-button,
+.ymaps-2-1-79-scaleline,
+.ymaps-2-1-79-controls__toolbar_right,
+.ymaps-2-1-79-copyright__agreement,
+.ymaps-2-1-79-controls__control,
+.ymaps-2-1-79-controls__toolbar_left,
+.ymaps-2-1-79-map-copyrights-promo,
+.ymaps-2-1-79-controls__toolbar {
+  display: none!important;
+}
+
+
+#map {
+    display: flex;
+    height: 566px;
+    width:100%;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}

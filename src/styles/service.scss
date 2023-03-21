@@ -1,0 +1,31 @@
+@import "common.scss";
+
+.service {
+    @include marginBlock;
+    padding-top: 50px;
+    background-color: $Grafit;
+    color: $snowWhite;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service-wrapper__middle {
+    background-image: url("../images/service.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-wrapper__right {
+    padding-bottom: 70px;
+    ul {
+        font-family: 'Montserrat Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 37px;
+        list-style: none;
+    }
+}

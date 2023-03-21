@@ -1,40 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const validation = new JustValidate('.form');
-  const validationForm = new JustValidate('.contact-application__form');
-  
+  const validationForm = new JustValidate('.contacts-form');
+  const selector = document.querySelector("input[type='tel']");
+  const im = new Inputmask("+7 (999)-999-99-99");
+  im.mask(selector);
 
-  validation
-    .addField('.mail', [{
-        rule: 'required',
-        errorMessage: 'Поле нужно заполнить',
-      },
-      {
-        rule: 'email',
-        errorMessage: 'Вы не корректно ввели email',
-      }
-    ])
 
   validationForm
-    .addField('.name', [{
+    .addField('.contacts-form__name', [{
       rule: 'minLength',
       value: 3,
-      errorMessage: "Не достаточное количество символов"
+      errorMessage: "Недостаточное количество символов"
     },
     {
       rule: 'maxLength',
       value: 5,
-      errorMessage: "Вы ввели больше чем положено"
+      errorMessage: "Вы ввели больше, чем положено"
     }
   ])
 
-  .addField('.email', [{
-    rule: 'required',
-    errorMessage: 'Поле нужно заполнить',
-  },
-  {
-    rule: 'email',
-    errorMessage: 'Вы не корректно ввели email',
-  }
-])
+  .addField('.contacts-form__phone', [{
+    rule: "function",
+    validator: function (name, value) {
+      const phone = selector.inputmask.unmaskedvalue();
+      return phone.length === 10
+    },
+    errorMessage: 'Недостаточное количество символов',
+  }]);
   
 })

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+
+    <title>ADS</title>
+    <link rel="stylesheet" href="main.css" />
+    <link type="image/x-icon" href="images/svg/favicon.svg" rel="shortcut icon" />
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
+</head>
+
+<body>
+    <!--navigation-->
+
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="index.html#hero" class="logo"><img src="images/logo.png" alt="logo" /></a>
+                <ul class="header-list">
+                    <button class="burger-close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="10" fill="#999999" />
+                            <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)"
+                                fill="white" />
+                            <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <li class="header-list__item"><a href="index.html#about">О&nbsp;нас</a></li>
+                    <li class="header-list__item header-dropdown">
+                        <a href="index.html#products">Продукция</a>
+                        <div class="header-submenu">
+                            <ul class="header-submenu__list">
+                                <li><a href="slide.html">Раздвижные двери</a></li>
+                                <li><a href="swing.html">Распашные двери</a></li>
+                                <li><a href="revolve.html">Револьверные двери</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-list__item"><a href="index.html#service">Сервис</a></li>
+                    <li class="header-list__item"><a href="index.html#parts">Запчасти</a></li>
+                    <li class="header-list__item"><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+
+                <button class="btn-reset burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="slide">
+        <section class="slide">
+            <div class="container">
+                <h2 class="slide__title">Раздвижные двери</h2>
+                <h3 class="slide__subtitle"> Tormax 2201</h3>
+                <div class="slide-content">
+                    <p>TORMAX 2201&nbsp;&mdash; это тонкий и&nbsp;компактный привод для раздвижных дверей:
+                        он&nbsp;быстро
+                        устанавливается и&nbsp;гармонично вписывается в&nbsp;классическую и&nbsp;современную
+                        архитектуру.
+                        В&nbsp;комплекте с&nbsp;бескаркасным монтажным комплектом TORMAX 2201&nbsp;с цельностеклянными
+                        раздвижными дверями он&nbsp;также отвечает самым высоким требованиям к&nbsp;дизайну
+                        и&nbsp;эстетике.
+                        Гарантируется длительный срок службы, надежность и&nbsp;низкие эксплуатационные расходы.</p>
+                    <img src="../images/slide1-1920.png" alt="">
+                    <img src="../images/slide2-1920.png" alt="">
+                    <div class="slide-content__down">
+                        <h3>ПРЕИМУЩЕСТВА</h3>
+                        <ul>
+                            <li>
+                                <p>Длинная и&nbsp;компактная конструкция (высота 100&nbsp;мм, глубина 142&nbsp;мм)</p>
+                            </li>
+                            <li>
+                                <p>Программирование и&nbsp;настройка параметров непосредственно на&nbsp;заказ</p>
+                            </li>
+                            <li>
+                                <p>Индивидуальное программирование многих функций</p>
+                            </li>
+                            <li>
+                                <p>Бесшумные движения дверных полотен</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <nav class="footer container">
+            <div class="footer__left">
+                <img class="footer__img" src="images/Logo.png" alt="logo" />
+            </div>
+            <div class="footer__right">
+                <ul class="header-list">
+                    <li class="header-list__item"><a href="index.html#about">О&nbsp;нас</a></li>
+                    <li class="header-list__item"><a href="index.html#products">Продукция</a></li>
+                    <li class="header-list__item"><a href="index.html#service">Сервис</a></li>
+                    <li class="header-list__item"><a href="index.html#parts">Запчасти</a></li>
+                    <li class="header-list__item"><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </footer>
+
+
+</body>
+
+</html>

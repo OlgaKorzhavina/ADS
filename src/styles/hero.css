@@ -20,5 +20,99 @@
   font-display: swap;
 }
 .hero {
-  background-image: url("/src/images/hero1920.jpg");
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  height: 870px;
+  background-image: url("images/hero1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text__transparent {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  color: transparent;
+  font-size: 8vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #E7E7E7;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-text__white,
+.hero-text__yellow {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.hero-text__white {
+  color: #ffffff;
+}
+
+.hero-text__yellow {
+  color: #FFF500;
+}
+
+.btn-stroke {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 78px;
+  padding: 12px 26px;
+  background-color: transparent;
+  outline: 1px solid #FFF500;
+  border: none;
+  border-radius: 50px;
+}
+.btn-stroke a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #FFF500;
+  text-decoration: none;
+}
+
+.btn-stroke:hover {
+  background-color: #FFF500;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:hover a {
+  color: #2B2B2B;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn-stroke:focus {
+  background-color: #FFF500;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:focus a {
+  color: #2B2B2B;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn-stroke:active {
+  background-color: #2B2B2B;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:active a {
+  color: #FFF500;
+  transition: color 0.5s ease-in-out;
 }/*# sourceMappingURL=hero.css.map */

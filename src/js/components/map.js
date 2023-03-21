@@ -1,32 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-// Функция ymaps.ready() будет вызвана, когда
-// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-ymaps.ready(init);
-function init() {
-  var myMap = new ymaps.Map("map", {
-    center: [55.77068671274726,37.62249213280481],
-    zoom: 15,
-  });
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.893112068852496,37.48429849999997],
+            zoom: 15
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
 
-  myGeoObject = new ymaps.GeoObject({
-    geometry: {
-      type: "Point",
-      coordinates: [55.76953456898229,37.63998549999998],
-    },
-  });
+       
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/location.png',
+            // Размеры метки.
+            iconImageSize: [30, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        })
+
+       
+    myMap.geoObjects
+        .add(myPlacemark)
+       
+});
+  })
+  
 
 
-  var myPlacemark = new ymaps.Placemark(
-    [55.76953456898229,37.63998549999998],
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "./images/svg/location.svg",
-      iconImageSize: [12, 12],
-      iconImageOffset: [-24, -24],
-    }
-  );
 
-  myMap.geoObjects.add(myPlacemark);
-}
-})

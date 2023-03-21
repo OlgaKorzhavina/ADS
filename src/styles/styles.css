@@ -1,0 +1,1349 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.burger {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background-color: #E7E7E7;
+  z-index: 1000;
+}
+
+.burger-close {
+  display: none;
+}
+
+.burger-close--active {
+  display: block;
+  margin-bottom: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+.header__nav {
+  margin: 0;
+  padding: 21px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list,
+.footer-list {
+  display: flex;
+  list-style: none;
+}
+.header-list li:not(:last-child),
+.footer-list li:not(:last-child) {
+  margin-right: 100px;
+}
+.header-list a,
+.footer-list a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-decoration: none;
+  color: #2B2B2B;
+}
+
+.header-list li a:hover {
+  transition: color 0.3s;
+}
+
+.header-list li a:focus {
+  transition: color 0.3s;
+}
+
+.header-list li a:active {
+  background-color: transparent;
+  transition: color 0.3s;
+}
+
+.header-submenu {
+  max-width: 310px;
+  padding-top: 33px;
+  position: absolute;
+  display: none;
+  background-color: rgba(231, 231, 231, 0.8);
+  opacity: 0;
+  animation: ani 0.5s forwards;
+}
+.header-submenu li {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #2B2B2B;
+  list-style: none;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.header-dropdown:hover .header-submenu {
+  display: block;
+  z-index: 10;
+}
+
+.header-submenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.hero {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  height: 870px;
+  background-image: url("images/hero1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text__transparent {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  color: transparent;
+  font-size: 8vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #E7E7E7;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-text__white,
+.hero-text__yellow {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.hero-text__white {
+  color: #ffffff;
+}
+
+.hero-text__yellow {
+  color: #FFF500;
+}
+
+.btn-stroke {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 78px;
+  padding: 12px 26px;
+  background-color: transparent;
+  outline: 1px solid #FFF500;
+  border: none;
+  border-radius: 50px;
+}
+.btn-stroke a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #FFF500;
+  text-decoration: none;
+}
+
+.btn-stroke:hover {
+  background-color: #FFF500;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:hover a {
+  color: #2B2B2B;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn-stroke:focus {
+  background-color: #FFF500;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:focus a {
+  color: #2B2B2B;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn-stroke:active {
+  background-color: #2B2B2B;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:active a {
+  color: #FFF500;
+  transition: color 0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.about {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about-text__descr {
+  margin: 0 auto;
+  max-width: 1518px;
+  text-align: center;
+  line-height: 37px;
+  margin-bottom: 50px;
+}
+
+.about-direction {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.products {
+  margin-bottom: 100px;
+}
+
+.products-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.products-cards__item {
+  padding: 50px 40px;
+  background-color: #E7E7E7;
+  border-radius: 20px;
+}
+
+.products-cards__descr {
+  text-align: center;
+  background-color: #FFF500;
+  padding: 20px 20px;
+  border-radius: 50px;
+}
+.products-cards__descr a {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2B2B2B;
+}
+.products-cards__descr p {
+  line-height: 24px;
+}
+
+.products-cards__descr:hover {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:focus {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:active {
+  background-color: transparent;
+  outline: 2px solid #FFF500;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.service {
+  margin-bottom: 100px;
+  padding-top: 50px;
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-wrapper__middle {
+  background-image: url("../images/service.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-wrapper__right {
+  padding-bottom: 70px;
+}
+.service-wrapper__right ul {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.parts {
+  margin-bottom: 100px;
+}
+
+.parts-cards {
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.parts-cards__item {
+  display: flex;
+  justify-content: center;
+  padding: 26px 32px 40px 32px;
+  background-color: #E7E7E7;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.parts-cards__descr p {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #FFF500;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px 10px;
+}
+
+.parts-cards__item:hover {
+  border: 1px solid #FFF500;
+  box-shadow: 4px 4px 6px -1px #929292, -4px 4px 6px -1px #929292;
+  transform: scale(1.2);
+}
+
+.four-item__hidden {
+  display: none;
+}
+
+.parts-btn {
+  padding: 25px 50px;
+  border-radius: 50px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: #2B2B2B;
+  color: #ffffff;
+}
+
+.parts-btn:hover {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  color: #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.parts-card__hidden {
+  height: 0;
+  display: none;
+  transition: height 0.3s;
+}
+
+.parts-card__hidden--visible {
+  display: grid;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.contacts-wrapper__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contacts-wrapper__item a {
+  padding-top: 30px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  color: #2B2B2B;
+  text-decoration: none;
+}
+
+input {
+  margin-right: 30px;
+  align-items: center;
+  padding: 21px 35px;
+  background-color: #ffffff;
+  border: 1px solid #2B2B2B;
+  border-radius: 50px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.contacts-form {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-form__btn {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 20px 70px;
+  background-color: #FFF500;
+  border: none;
+  border-radius: 50px;
+  color: #2B2B2B;
+}
+
+.contacts-form__btn:hover {
+  background-color: #2B2B2B;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.just-validate-error-field {
+  position: relative;
+}
+
+.just-validate-error-label {
+  margin-top: -65px;
+  margin-left: 37px;
+  font-size: 12px !important;
+}
+
+.ymaps-2-1-79-float-button-icon,
+.ymaps-2-1-79-float-button-icon_icon_geolocation,
+.ymaps-2-1-79-controls__control_toolbar,
+.ymaps-2-1-79-searchbox,
+.ymaps-2-1-79-scaleline,
+.ymaps-2-1-79-zoom,
+.ymaps-2-1-79-float-button,
+.ymaps-2-1-79-scaleline,
+.ymaps-2-1-79-controls__toolbar_right,
+.ymaps-2-1-79-copyright__agreement,
+.ymaps-2-1-79-controls__control,
+.ymaps-2-1-79-controls__toolbar_left,
+.ymaps-2-1-79-map-copyrights-promo,
+.ymaps-2-1-79-controls__toolbar {
+  display: none !important;
+}
+
+#map {
+  display: flex;
+  height: 566px;
+  width: 100%;
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+footer {
+  padding: 30px 0;
+  background-color: #E7E7E7;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  list-style: none;
+}
+.footer-list a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+@media (max-width: 1290px) {
+  .header-list a,
+  .footer-list a {
+    font-size: 16px;
+  }
+  .header-list li:not(:last-child),
+  .footer-list li:not(:last-child) {
+    margin-right: 50px;
+  }
+  .btn-stroke a {
+    font-size: 16px;
+  }
+  .hero {
+    padding-top: 130px;
+    height: 740px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .hero-wrapper {
+    flex-direction: column;
+  }
+  .about-direction {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .directions__item svg {
+    height: 50px;
+    width: 50px;
+  }
+  .products-cards__item {
+    display: flex;
+    justify-content: center;
+    padding: 25px 20px;
+  }
+  .products-cards__descr a {
+    font-size: 16px;
+  }
+  .service-wrapper__middle {
+    background-size: contain;
+  }
+  .service-wrapper__right ul {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .parts-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .parts-cards__item {
+    padding: 15px;
+  }
+  .parts {
+    margin-bottom: 50px;
+  }
+  .four-item {
+    display: none;
+  }
+  .four-item__hidden {
+    display: flex;
+  }
+  .contacts-wrapper__item svg {
+    height: 50px;
+    width: 50px;
+  }
+  .contacts-wrapper__item a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-form {
+    align-items: center;
+    flex-direction: column;
+  }
+  input {
+    width: 450px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .contacts-form__btn {
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 21px 90px;
+  }
+}
+@media (max-width: 885px) {
+  .header {
+    height: 80px;
+  }
+  .about,
+  .service {
+    margin-bottom: 50px;
+  }
+  .service-content {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .service-wrapper__middle {
+    display: none;
+  }
+  .parts-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .parts-cards p {
+    padding: 20px;
+  }
+  .four-item {
+    display: flex;
+  }
+  .four-item__hidden {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__img {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 692px) {
+  .products-cards {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .footer-list {
+    flex-direction: column;
+  }
+  .footer-list li:not(:last-child) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .hero-text__transparent {
+    -webkit-text-stroke: 0.5px #e7e7e7;
+  }
+  .hero {
+    padding-top: 80px;
+    max-height: 350px;
+  }
+  .about-text__descr {
+    line-height: 26px;
+  }
+  .btn-stroke {
+    margin-top: 30px;
+  }
+  .parts-cards {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .parts-btn {
+    width: 100%;
+  }
+  input {
+    max-width: 280px;
+  }
+  .service-content,
+  .contacts-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .service-content__item a,
+  .contacts-wrapper__item a {
+    padding-top: 5px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-family: "Montserrat Semibold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 30px;
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+p {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.form .just-validate-error-label,
+.contact-application__form .just-validate-error-label {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.products-cards__descr p {
+  font-size: 20px;
+}
+
+@media (max-width: 1290px) {
+  section {
+    margin-bottom: 50px;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .parts-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 570px) {
+  section {
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .parts-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=styles.css.map */

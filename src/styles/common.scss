@@ -50,7 +50,15 @@ $moonStone: #E7E7E7;
   }
   
   @mixin marginBlock {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+  }
+
+  @mixin marginBlockTablet {
+    margin-bottom: 50px;
+  }
+
+  @mixin marginBlockMobile {
+    margin-bottom: 20px;
   }
   
   @mixin span {

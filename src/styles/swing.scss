@@ -1,0 +1,25 @@
+@import "common.scss";
+.swing{
+    margin-bottom: 50px;
+}
+
+.swing__title {
+    padding-top: 150px;
+}
+
+.swing-content {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 30px;
+    &__down {
+margin-left: 30px;
+        li::marker{
+            color: $yellowAmber;
+            font-size: 50px;
+        }
+    }
+   
+}

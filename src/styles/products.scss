@@ -1,0 +1,53 @@
+@import "common.scss";
+
+.products{
+    @include marginBlock;
+}
+
+.products-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.products-cards__item{
+    padding: 50px 40px;
+    background-color: $moonStone;
+    border-radius: 20px;
+}
+
+.products-cards__descr{
+    text-align: center;
+    background-color: $yellowAmber;
+    padding: 20px 20px;
+    border-radius: 50px;
+    a{
+        font-family: 'Montserrat Regular', "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        color: $Grafit;
+    }
+    p{
+        line-height: 24px;
+    }
+}
+
+.products-cards__descr:hover{
+    background-color: transparent;
+    outline: 1px solid $Grafit;
+    transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:focus{
+    background-color: transparent;
+    outline: 1px solid $Grafit;
+    transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:active{
+    background-color: transparent;
+    outline: 2px solid $yellowAmber;
+    transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}

@@ -1,7 +1,106 @@
 @import "common.scss";
 .hero {
- background-image: url('/src/images/hero1920.jpg');
-
+  @include marginBlock;
+  display: flex;
+    align-items: center;
+  height: 870px;
+ background-image: url('images/hero1920.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
   }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  .hero-text__transparent{
+    font-family: "Montserrat Semibold";
+    font-style: normal;
+    font-weight: 600;
+    color: transparent;
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px $moonStone;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .hero-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-text__white,
+  .hero-text__yellow{
+    font-family: "Montserrat Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7vw;
+    text-transform: uppercase;
+  }
+
+  .hero-text__white{
+    color: $snowWhite;
+  }
+
+  .hero-text__yellow{
+    color: $yellowAmber;
+  }
+
+  .btn-stroke{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 78px;
+    padding: 12px 26px;
+    background-color: transparent;
+    outline: 1px solid $yellowAmber;
+    border: none;
+    border-radius: 50px;
+    
+    a{
+      font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: $yellowAmber;
+    text-decoration: none;
+    }
+  }
+
+  .btn-stroke:hover{
+    background-color: $yellowAmber;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .btn-stroke:hover a{
+    color: $Grafit;
+    transition: color 0.5s ease-in-out;
+  }
+
+
+  .btn-stroke:focus{
+    background-color: $yellowAmber;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .btn-stroke:focus a{
+    color: $Grafit;
+    transition: color 0.5s ease-in-out;
+  }
+
+
+  .btn-stroke:active{
+    background-color: $Grafit;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .btn-stroke:active a{
+    color: $yellowAmber;
+    transition: color 0.5s ease-in-out;
+  }
+
+
 
   

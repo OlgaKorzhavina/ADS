@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  font-display: swap;
+}
+.products {
+  margin-bottom: 100px;
+}
+
+.products-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.products-cards__item {
+  padding: 50px 40px;
+  background-color: #E7E7E7;
+  border-radius: 20px;
+}
+
+.products-cards__descr {
+  text-align: center;
+  background-color: #FFF500;
+  padding: 20px 20px;
+  border-radius: 50px;
+}
+.products-cards__descr a {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2B2B2B;
+}
+.products-cards__descr p {
+  line-height: 24px;
+}
+
+.products-cards__descr:hover {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:focus {
+  background-color: transparent;
+  outline: 1px solid #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.products-cards__descr:active {
+  background-color: transparent;
+  outline: 2px solid #FFF500;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}/*# sourceMappingURL=products.css.map */
