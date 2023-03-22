@@ -152,9 +152,14 @@ const stylesBuild =() =>{
 const fontsBuild =() =>{
     return src ([
         'src/fonts/**/*.woff',
-    'src/fonts/**/*woff2',
-'src/fonts/**/*ttf'])
+    'src/fonts/**/*woff2'])
     .pipe(dest('dist/fonts'))
+}
+
+const phpBuild =() =>{
+    return src (
+        'src/**/*.php')
+    .pipe(dest('dist'))
 }
 
 
@@ -174,4 +179,4 @@ const scriptsBuild = () =>{
 
 
 
-exports.build = series(clean, resources, htmlMinifyBuild, scriptsBuild, stylesBuild, images, fontsBuild, svgSprites);
+exports.build = series(clean, resources, htmlMinifyBuild, scriptsBuild, stylesBuild, images, phpBuild, fontsBuild, svgSprites);
