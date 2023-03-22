@@ -117,5 +117,5 @@ input {
 }
 
 [class*=ground-pane] {
-  filter: grayscale(1);
+  filter: invert(100%) grayscale(1) brightness(150%);
 }/*# sourceMappingURL=contacts.css.map */

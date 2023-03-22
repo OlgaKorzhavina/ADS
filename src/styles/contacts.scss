@@ -93,6 +93,8 @@ input {
 }
 
 
+
+
 #map {
     display: flex;
     height: 566px;
@@ -100,5 +102,10 @@ input {
 }
 
 [class*="ground-pane"] {
-    filter: grayscale(1);
+    filter: invert(100%) grayscale(1) brightness(150%);
+   // filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+   // -ms-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+   // -webkit-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+   // -moz-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+   // -o-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
 }

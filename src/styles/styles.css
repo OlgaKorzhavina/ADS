@@ -514,6 +514,7 @@ template {
   background-image: url("images/hero1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-text {
@@ -530,14 +531,32 @@ template {
   -webkit-text-stroke: 2px #E7E7E7;
   -webkit-background-clip: text;
   background-clip: text;
+  animation: 2s linear slidein;
 }
 
 .hero-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  animation: 2s linear slidewrap;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slidewrap {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 .hero-text__white,
 .hero-text__yellow {
   font-family: "Montserrat Semibold";
@@ -976,7 +995,7 @@ input {
 }
 
 [class*=ground-pane] {
-  filter: grayscale(1);
+  filter: invert(100%) grayscale(1) brightness(150%);
 }
 
 @font-face {
@@ -1227,6 +1246,10 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

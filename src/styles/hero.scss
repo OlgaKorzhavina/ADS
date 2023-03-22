@@ -7,6 +7,7 @@
  background-image: url('images/hero1920.jpg');
  background-size: cover;
  background-repeat: no-repeat;
+ background-attachment: fixed;
   }
 
   .hero-text{
@@ -21,15 +22,36 @@
     font-size: 8vw;
     text-transform: uppercase;
     -webkit-text-stroke: 2px $moonStone;
-
     -webkit-background-clip: text;
     background-clip: text;
+    animation: 2s linear slidein;
   }
 
   .hero-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    animation: 2s linear slidewrap;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slidewrap {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
   }
 
   .hero-text__white,

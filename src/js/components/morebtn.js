@@ -8,7 +8,10 @@ show.addEventListener("click", () => {
     if (show.innerText="Свернуть все"){
         show.addEventListener("click", () => {
         show.innerText = 'Показать все';
-        });
+        }
+       
+            
+        );
     }
 })
 
