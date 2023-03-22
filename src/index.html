@@ -15,9 +15,16 @@
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
 
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+ 
 
+ <!-- <script src="./js/components/wow.min.js"></script>-->
+  <!--<script>new WOW().init();</script>-->
 
   <title>ADS</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link rel="stylesheet" href="main.css" />
   <link type="image/x-icon" href="images/svg/favicon.svg" rel="shortcut icon" />
   <link rel="icon" type="image/svg" href="images/favicon.svg">
@@ -38,14 +45,6 @@
       <nav class="header__nav">
         <a href="#hero" class="logo"><img src="images/logo.png" alt="logo" /></a>
         <ul class="header-list">
-          <button class="burger-close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="10" cy="10" r="10" fill="#999999" />
-              <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
-              <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
-                fill="white" />
-            </svg>
-          </button>
           <li class="header-list__item"><a href="#about">О&nbsp;нас</a></li>
           <li class="header-list__item header-dropdown">
             <a href="#products">Продукция</a>
@@ -93,8 +92,8 @@
     <section id="about" class="about">
       <div class="container">
         <div class="about-text">
-          <h2 class="about-text__title">О нас</h2>
-          <p class="about-text__descr">
+          <h2 class="about-text__title wow fadeInOut">О нас</h2>
+          <p class="about-text__descr wow">
             Мы&nbsp;&mdash; новая компания, но&nbsp;с&nbsp;солидными
             &laquo;корнями&raquo;. Нашей базой является московское
             подразделение ООО &laquo;Автоматические двери ТОРМАКС&raquo;.
@@ -108,8 +107,8 @@
             на&nbsp;потребности клиентов.
           </p>
         </div>
-        <h3 class="about-direction__title">Наши основные направления</h3>
-        <div class="about-direction">
+        <h3 class="about-direction__title wow fadeInOut">Наши основные направления</h3>
+        <div class="about-direction wow">
 
 
           <!--call-->
@@ -198,7 +197,7 @@
 
     <section id="products" class="products">
       <div class="container">
-        <h2 class="products__title">Продукция</h2>
+        <h2 class="products__title wow fadeInOut">Продукция</h2>
         <div class="products-cards">
           <div class="products-cards__item">
             <figure>
@@ -533,7 +532,7 @@
             <a>Московская область, г. Химки, ул. Пожарского, 22А</a>
           </div>
         </div>
-        <form action="mailto:korzjavina.olga@gmail.com" method="post" class="contacts-form">
+        <form action="send.php" method="post" class="contacts-form">
           <div>
           <input class="contacts-form__name" name="name" autocomplete="off" type="text" placeholder="Ваше имя" required>
         </div>
@@ -574,7 +573,7 @@
 
 	<script src="libs/inputmask.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-
+  <script type="text/javascript" src="./js/components/wow.min.js"></script>
 </body>
 
 </html>

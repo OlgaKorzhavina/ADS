@@ -25,10 +25,19 @@
   background-color: #2B2B2B;
   color: #ffffff;
 }
+.service__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
 
 .service-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.service-wrapper__left {
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 .service-wrapper__middle {
@@ -39,6 +48,8 @@
 
 .service-wrapper__right {
   padding-bottom: 70px;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 .service-wrapper__right ul {
   font-family: "Montserrat Regular";

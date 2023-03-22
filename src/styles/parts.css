@@ -22,6 +22,10 @@
 .parts {
   margin-bottom: 100px;
 }
+.parts__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
 
 .parts-cards {
   display: grid;
@@ -30,6 +34,8 @@
   gap: 30px;
 }
 .parts-cards__item {
+  animation: fadeInUp;
+  animation-duration: 1s;
   display: flex;
   justify-content: center;
   padding: 26px 32px 40px 32px;
@@ -58,11 +64,12 @@
 
 .parts-btn {
   padding: 25px 50px;
+  border: none;
   border-radius: 50px;
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #2B2B2B;
   color: #ffffff;
 }
@@ -71,6 +78,7 @@
   background-color: transparent;
   outline: 1px solid #2B2B2B;
   color: #2B2B2B;
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
 .parts-card__hidden {

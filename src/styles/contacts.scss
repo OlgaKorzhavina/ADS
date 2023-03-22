@@ -1,6 +1,11 @@
 @import "common.scss";
 
+.contacts__title{
+    @include fadeInOut;
+}
+
 .contacts-wrapper {
+    @include fadeInOut;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 30px;
@@ -36,10 +41,11 @@ input {
     font-family: 'Montserrat Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .contacts-form {
+    @include fadeInOut;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -49,7 +55,7 @@ input {
     font-family: 'Montserrat Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px 70px;
     background-color: $yellowAmber;
     border: none;

@@ -108,6 +108,105 @@ input{
 }
 
 @media(max-width:885px){
+    .burger {
+        display: inline-flex;
+        position: absolute;
+       right: 30px;
+        height: 45px;
+        border: none;
+        background-color: transparent;
+        color: $Grafit;
+        z-index: 1000;
+    
+        &__item {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+     
+    
+      .burger__line {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: $Grafit;
+        transform: translateX(-50%);
+      }
+    
+      .burger__line:nth-child(1) {
+        top: 16px;
+      }
+    
+      .burger__line:nth-child(3) {
+        bottom: 12px;
+      }
+    
+      .burger__line:nth-child(2) {
+        top: 55%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      .burger--active .burger__line:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .burger--active .burger__line:first-child {
+        left: 25%;
+        top: 50%;
+        transform: rotate(45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+        z-index: 200;
+      }
+    
+      .burger--active .burger__line:last-child {
+        z-index: 200;
+        bottom: auto;
+        left: 25%;
+        top: 50%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+        z-index: 200;
+      }
+    
+
+     .header-dropdown:focus .header-submenu{
+        display: flex;
+        flex-direction: column;
+      }
+    
+    
+
+ .header__nav{
+    display: block;
+ }     
+
+.header-list{
+    display: none;
+}
+
+.stop-scroll {
+    overflow: hidden;
+  }
+
+
+.header-list--active{
+    position: absolute;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: $moonStone;
+    li{
+      margin: 0;
+      margin-bottom: 20px;  
+    }
+}
+
     .header{
         height: 80px;
     }
@@ -148,6 +247,7 @@ input{
         }
     }
 
+   
 }
 
 @media(max-width:692px){

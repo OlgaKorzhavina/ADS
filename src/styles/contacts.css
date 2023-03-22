@@ -19,7 +19,14 @@
   src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
   font-display: swap;
 }
+.contacts__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
 .contacts-wrapper {
+  animation: fadeInUp;
+  animation-duration: 1s;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   -moz-column-gap: 30px;
@@ -54,10 +61,12 @@ input {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contacts-form {
+  animation: fadeInUp;
+  animation-duration: 1s;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -67,7 +76,7 @@ input {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px 70px;
   background-color: #FFF500;
   border: none;

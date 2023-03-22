@@ -2,6 +2,10 @@
 
 .parts {
     @include marginBlock;
+
+    &__title{
+        @include fadeInOut;
+    }
 }
 
 .parts-cards {
@@ -11,6 +15,7 @@
     gap: 30px;
 
     &__item {
+        @include fadeInOut;
         display: flex;
         justify-content: center;
         padding: 26px 32px 40px 32px;
@@ -42,11 +47,12 @@
 
 .parts-btn {
     padding: 25px 50px;
+    border: none;
     border-radius: 50px;
     font-family: 'Montserrat Regular';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     background-color: $Grafit;
     color: $snowWhite;
 }

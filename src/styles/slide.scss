@@ -33,3 +33,22 @@
     }
 
 }
+
+@media(max-width:885px){
+    .slide__subtitle {
+        display: flex;
+        justify-content: center;
+    }
+    .slide-content {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        column-gap: 30px;
+        p{
+            grid-row: 2;
+        }
+    }
+
+
+    }

@@ -5,11 +5,20 @@
     padding-top: 50px;
     background-color: $Grafit;
     color: $snowWhite;
+
+    &__title{
+        @include fadeInOut;
+    }
 }
 
 .service-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.service-wrapper__left {
+    @include fadeInOut;
 }
 
 .service-wrapper__middle {
@@ -20,6 +29,7 @@
 
 .service-wrapper__right {
     padding-bottom: 70px;
+    @include fadeInOut;
     ul {
         font-family: 'Montserrat Regular';
         font-style: normal;

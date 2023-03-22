@@ -42,4 +42,16 @@
 .swing-content__down li::marker {
   color: #FFF500;
   font-size: 50px;
+}
+
+@media (max-width: 885px) {
+  .slide-content,
+  .swing-content {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
 }/*# sourceMappingURL=swing.css.map */

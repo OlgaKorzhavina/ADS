@@ -45,4 +45,22 @@
 .slide-content__down li::marker {
   color: #FFF500;
   font-size: 50px;
+}
+
+@media (max-width: 885px) {
+  .slide__subtitle {
+    display: flex;
+    justify-content: center;
+  }
+  .slide-content {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .slide-content p {
+    grid-row: 2;
+  }
 }/*# sourceMappingURL=slide.css.map */

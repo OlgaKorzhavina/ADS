@@ -22,12 +22,18 @@
 .products {
   margin-bottom: 100px;
 }
+.products__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
 
 .products-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 30px;
        column-gap: 30px;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 .products-cards__item {

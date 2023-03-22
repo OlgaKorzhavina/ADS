@@ -3,7 +3,13 @@
     @include marginBlock;
     text-align: center;
 }
+
+.about-text__title{
+  @include fadeInOut;
+}
+
 .about-text__descr{
+  @include fadeInOut;
     margin: 0 auto;
     max-width: 1518px;
     text-align: center;
@@ -11,8 +17,13 @@
 margin-bottom: 50px;
 }
 
+.about-direction__title{
+  @include fadeInOut;
+}
+
 .about-direction{
+  @include fadeInOut;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 70px;
+    column-gap: 70px;   
 }

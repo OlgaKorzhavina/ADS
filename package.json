@@ -26,5 +26,8 @@
     "gulp-svg-sprite": "^2.0.1",
     "gulp-uglify-es": "^3.0.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  }
 }

@@ -24,7 +24,14 @@
   text-align: center;
 }
 
+.about-text__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
 .about-text__descr {
+  animation: fadeInUp;
+  animation-duration: 1s;
   margin: 0 auto;
   max-width: 1518px;
   text-align: center;
@@ -32,7 +39,14 @@
   margin-bottom: 50px;
 }
 
+.about-direction__title {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
 .about-direction {
+  animation: fadeInUp;
+  animation-duration: 1s;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 70px;
