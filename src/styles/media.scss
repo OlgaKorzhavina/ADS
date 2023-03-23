@@ -108,10 +108,16 @@ input{
 }
 
 @media(max-width:885px){
+    .logo{
+        img{
+            max-width: 180px;
+        }
+    }
     .burger {
         display: inline-flex;
         position: absolute;
        right: 30px;
+       top: 12px;
         height: 45px;
         border: none;
         background-color: transparent;
@@ -172,7 +178,7 @@ input{
         z-index: 200;
       }
     
-
+ 
      .header-dropdown:focus .header-submenu{
         display: flex;
         flex-direction: column;
@@ -206,6 +212,21 @@ input{
       margin-bottom: 20px;  
     }
 }
+
+.header-submenu{
+    padding-top: 7px;
+    padding-left: 30px;
+    position: relative;
+    width: 100%;
+    li{
+        padding: 0;
+        margin: 0;
+    }
+    &__list{
+        margin-bottom: 5px;
+    }
+  }
+
 
     .header{
         height: 80px;
@@ -243,6 +264,7 @@ input{
     .footer{
         flex-direction: column;
         &__img{
+            max-width: 180px;
             margin-bottom: 25px;
         }
     }

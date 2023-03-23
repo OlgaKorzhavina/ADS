@@ -28,7 +28,57 @@
         line-height: 37px;
         color: $Grafit;
         text-decoration: none;
+        border:none;
     }
+    svg{
+        fill: $Grafit;
+    }
+}
+
+.contacts-wrapper__item:hover {
+    a
+{
+    color: $lightGrafit;
+    transition: color 0.5s ease-in-out;
+}
+
+svg{
+    fill: $lightGrafit;
+    transition: fill 0.5s ease-in-out;
+}
+
+}
+
+.contacts-wrapper__item:focus {
+    a
+{
+    color: $lightGrafit;
+    transition: color 0.5s ease-in-out;
+    border: none;
+}
+
+svg{
+    outline-offset: 1px solid $Grafit;
+    fill: $lightGrafit;
+    transition: fill 0.5s ease-in-out;
+}
+
+}
+
+.contacts-wrapper__item:focus {
+    a
+{
+    color: $lightGrafit;
+    transition: color 0.5s ease-in-out;
+    border: none;
+}
+
+svg{
+   stroke: 1px solid $Grafit;
+    fill: $lightGrafit;
+    transition: fill 0.5s ease-in-out;
+}
+
 }
 
 input {

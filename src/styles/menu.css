@@ -2,21 +2,21 @@
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat-Regular"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Medium";
   font-style: normal;
   font-weight: 500;
-  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: local("Montserrat-Medium"), url("./fonts/Montserrat-Medium.woff") format("woff"), url("./fonts/Montserrat-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Semibold";
   font-style: normal;
   font-weight: 600;
-  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  src: local("Montserrat-Semibold"), url("./fonts/Montserrat-SemiBold.woff") format("woff2"), url("./fonts/Montserrat-SemiBold.woff2") format("woff");
   font-display: swap;
 }
 .burger {
@@ -30,6 +30,7 @@
   margin: auto;
   background-color: #E7E7E7;
   z-index: 1000;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .burger-close {
@@ -63,6 +64,9 @@
 }
 .header-list a,
 .footer-list a {
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
@@ -71,21 +75,27 @@
   color: #2B2B2B;
 }
 
-.header-list li a:hover {
-  transition: color 0.3s;
+.header-list a:after,
+.footer-list a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2B2B2B;
+  content: "";
+  transition: width 0.3s ease-out;
 }
 
-.header-list li a:focus {
-  transition: color 0.3s;
-}
-
-.header-list li a:active {
-  background-color: transparent;
-  transition: color 0.3s;
+.header-list a:hover:after,
+.header-list a:focus:after,
+.footer-list a:hover:after,
+.footer-list a:focus:after {
+  width: 100%;
 }
 
 .header-submenu {
-  max-width: 310px;
+  max-width: 280px;
   padding-top: 33px;
   position: absolute;
   display: none;
@@ -96,8 +106,11 @@
 .header-submenu li {
   width: 100%;
   padding: 10px;
-  border-bottom: 1px solid #2B2B2B;
+  border-bottom: 1px solid #ffffff;
   list-style: none;
+}
+.header-submenu__list a {
+  font-size: 20px;
 }
 
 @keyframes ani {
@@ -114,8 +127,9 @@
 }
 
 .header-submenu a {
-  color: black;
-  padding: 12px 16px;
+  color: #2B2B2B;
+  padding: 12px 0;
+  margin: 0 16px;
   text-decoration: none;
   display: block;
 }/*# sourceMappingURL=menu.css.map */

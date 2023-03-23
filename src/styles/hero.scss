@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 600;
     color: transparent;
-    font-size: 8vw;
+    font-size: 6vw;
     text-transform: uppercase;
     -webkit-text-stroke: 2px $moonStone;
     -webkit-background-clip: text;
@@ -59,7 +59,7 @@
     font-family: "Montserrat Semibold";
     font-style: normal;
     font-weight: 600;
-    font-size: 7vw;
+    font-size: 5.5vw;
     text-transform: uppercase;
   }
 
@@ -79,6 +79,7 @@
     background-color: transparent;
     outline: 1px solid $yellowAmber;
     border: none;
+    -webkit-border-radius: 50px;
     border-radius: 50px;
     
     a{

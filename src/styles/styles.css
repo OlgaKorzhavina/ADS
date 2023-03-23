@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "animate.css";
 html {
   line-height: 1.15;
   /* 1 */
@@ -482,6 +483,7 @@ template {
   margin: auto;
   background-color: #E7E7E7;
   z-index: 1000;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .burger-close {
@@ -515,6 +517,9 @@ template {
 }
 .header-list a,
 .footer-list a {
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
@@ -523,21 +528,27 @@ template {
   color: #2B2B2B;
 }
 
-.header-list li a:hover {
-  transition: color 0.3s;
+.header-list a:after,
+.footer-list a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2B2B2B;
+  content: "";
+  transition: width 0.3s ease-out;
 }
 
-.header-list li a:focus {
-  transition: color 0.3s;
-}
-
-.header-list li a:active {
-  background-color: transparent;
-  transition: color 0.3s;
+.header-list a:hover:after,
+.header-list a:focus:after,
+.footer-list a:hover:after,
+.footer-list a:focus:after {
+  width: 100%;
 }
 
 .header-submenu {
-  max-width: 310px;
+  max-width: 280px;
   padding-top: 33px;
   position: absolute;
   display: none;
@@ -548,8 +559,11 @@ template {
 .header-submenu li {
   width: 100%;
   padding: 10px;
-  border-bottom: 1px solid #2B2B2B;
+  border-bottom: 1px solid #ffffff;
   list-style: none;
+}
+.header-submenu__list a {
+  font-size: 20px;
 }
 
 @keyframes ani {
@@ -566,8 +580,9 @@ template {
 }
 
 .header-submenu a {
-  color: black;
-  padding: 12px 16px;
+  color: #2B2B2B;
+  padding: 12px 0;
+  margin: 0 16px;
   text-decoration: none;
   display: block;
 }
@@ -613,7 +628,7 @@ template {
   font-style: normal;
   font-weight: 600;
   color: transparent;
-  font-size: 8vw;
+  font-size: 6vw;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #E7E7E7;
   -webkit-background-clip: text;
@@ -649,7 +664,7 @@ template {
   font-family: "Montserrat Semibold";
   font-style: normal;
   font-weight: 600;
-  font-size: 7vw;
+  font-size: 5.5vw;
   text-transform: uppercase;
 }
 
@@ -801,6 +816,8 @@ template {
        column-gap: 30px;
   animation: fadeInUp;
   animation-duration: 1s;
+  visibility: visible;
+  animation-delay: 0.6s;
 }
 
 .products-cards__item {
@@ -830,17 +847,20 @@ template {
 .products-cards__descr:hover {
   background-color: transparent;
   outline: 1px solid #2B2B2B;
+  border-radius: 50px;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
 .products-cards__descr:focus {
   background-color: transparent;
+  border-radius: 50px;
   outline: 1px solid #2B2B2B;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
 .products-cards__descr:active {
   background-color: transparent;
+  border-radius: 50px;
   outline: 2px solid #FFF500;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
@@ -1052,6 +1072,41 @@ template {
   line-height: 37px;
   color: #2B2B2B;
   text-decoration: none;
+  border: none;
+}
+.contacts-wrapper__item svg {
+  fill: #2B2B2B;
+}
+
+.contacts-wrapper__item:hover a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+}
+.contacts-wrapper__item:hover svg {
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
+}
+
+.contacts-wrapper__item:focus a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+  border: none;
+}
+.contacts-wrapper__item:focus svg {
+  outline-offset: 1px solid #2B2B2B;
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
+}
+
+.contacts-wrapper__item:focus a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+  border: none;
+}
+.contacts-wrapper__item:focus svg {
+  stroke: 1px solid #2B2B2B;
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
 }
 
 input {
@@ -1286,10 +1341,14 @@ footer {
   }
 }
 @media (max-width: 885px) {
+  .logo img {
+    max-width: 180px;
+  }
   .burger {
     display: inline-flex;
     position: absolute;
     right: 30px;
+    top: 12px;
     height: 45px;
     border: none;
     background-color: transparent;
@@ -1365,6 +1424,19 @@ footer {
     margin: 0;
     margin-bottom: 20px;
   }
+  .header-submenu {
+    padding-top: 7px;
+    padding-left: 30px;
+    position: relative;
+    width: 100%;
+  }
+  .header-submenu li {
+    padding: 0;
+    margin: 0;
+  }
+  .header-submenu__list {
+    margin-bottom: 5px;
+  }
   .header {
     height: 80px;
   }
@@ -1396,6 +1468,7 @@ footer {
     flex-direction: column;
   }
   .footer__img {
+    max-width: 180px;
     margin-bottom: 25px;
   }
 }
@@ -1515,7 +1588,7 @@ img {
 }
 
 .container {
-  max-width: 1820px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 0 30px;
 }

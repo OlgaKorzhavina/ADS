@@ -17,14 +17,10 @@
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
  
 
- <!-- <script src="./js/components/wow.min.js"></script>-->
-  <!--<script>new WOW().init();</script>-->
+
 
   <title>ADS</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+ 
   <link rel="stylesheet" href="main.css" />
   <link type="image/x-icon" href="images/svg/favicon.svg" rel="shortcut icon" />
   <link rel="icon" type="image/svg" href="images/favicon.svg">
@@ -93,7 +89,7 @@
       <div class="container">
         <div class="about-text">
           <h2 class="about-text__title wow fadeInOut">О нас</h2>
-          <p class="about-text__descr wow">
+          <p class="about-text__descr wow fadeInOut">
             Мы&nbsp;&mdash; новая компания, но&nbsp;с&nbsp;солидными
             &laquo;корнями&raquo;. Нашей базой является московское
             подразделение ООО &laquo;Автоматические двери ТОРМАКС&raquo;.
@@ -108,7 +104,7 @@
           </p>
         </div>
         <h3 class="about-direction__title wow fadeInOut">Наши основные направления</h3>
-        <div class="about-direction wow">
+        <div class="about-direction wow fadeInOut">
 
 
           <!--call-->
@@ -199,7 +195,7 @@
       <div class="container">
         <h2 class="products__title wow fadeInOut">Продукция</h2>
         <div class="products-cards">
-          <div class="products-cards__item">
+          <div class="products-cards__item wow fadeInOut">
             <figure>
               <picture>
                 <img src="images/product-one1920.png" alt="Раздвижные двери" />
@@ -213,7 +209,7 @@
             </figure>
           </div>
 
-          <div class="products-cards__item">
+          <div class="products-cards__item wow fadeInOut">
             <figure>
               <picture>
                 <img src="images/product-two1920.png" alt="Распашные двери" />
@@ -224,7 +220,7 @@
             </figure>
           </div>
 
-          <div class="products-cards__item">
+          <div class="products-cards__item wow fadeInOut">
             <figure>
               <picture>
                 <img src="images/product-three1920.png" alt="Револьверные двери" />
@@ -479,8 +475,8 @@
         <div class="contacts-wrapper">
           <!--mail-->
           <div class="contacts-wrapper__item">
-            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" fill="#2B2B2B" />
+            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" />
               <path
                 d="M49.2857 18H18.8095C16.7143 18 15.019 19.8 15.019 22L15 46C15 48.2 16.7143 50 18.8095 50H49.2857C51.381 50 53.0952 48.2 53.0952 46V22C53.0952 19.8 51.381 18 49.2857 18ZM49.2857 26L34.0476 36L18.8095 26V22L34.0476 32L49.2857 22V26Z"
                 fill="white" />
@@ -490,8 +486,8 @@
 
           <!--telegram-->
           <div class="contacts-wrapper__item">
-            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" fill="#2B2B2B" />
+            <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="34" cy="33.871" rx="34" ry="33.871"/>
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M49.0279 14.4199C49.4939 14.2161 50.0243 14.0315 50.6023 14.0036C51.1804 13.9757 51.8042 14.1042 52.462 14.5326C53.1197 14.9611 53.666 15.7774 53.8684 16.614C54.0708 17.4505 54.0202 18.2714 53.8489 19.1203L53.8606 19.0682C53.8606 19.0682 48.3554 49.7504 48.227 50.4834L48.2231 50.4877C48.0622 51.396 47.7041 52.066 47.1292 52.7208C46.5544 53.3757 45.6559 54 44.5195 54C42.6151 54 41.7922 52.764 41.6871 52.5994L35.9364 46.6936L31.2405 51.1035L31.1975 51.1382C31.1975 51.1382 30.5307 51.7929 29.4434 51.7929C29.1901 51.7929 28.9165 51.7304 28.6425 51.6368C28.6131 51.6302 28.5892 51.6261 28.5676 51.6225C28.5319 51.6165 28.5027 51.6116 28.4667 51.5978C28.447 51.5903 28.4286 51.5798 28.4101 51.5694C28.3954 51.561 28.3806 51.5527 28.3651 51.5458L28.412 51.5588C28.4039 51.5551 28.3957 51.5528 28.3875 51.5505C28.3787 51.548 28.3699 51.5455 28.3612 51.5414C28.2411 51.4872 28.1215 51.4294 28.0135 51.355C27.732 51.1609 27.5025 50.9151 27.3103 50.6438C26.9258 50.1013 26.6489 49.4514 26.3649 48.4541H26.3688C26.0141 47.2106 24.6568 42.7009 24.0723 40.7586C23.9945 40.5 23.9303 40.2869 23.8841 40.1331C22.7747 39.6403 18.1153 37.5709 16.555 36.881V36.8853C16.0934 36.6816 15.5412 36.4081 14.9962 35.823C14.4513 35.2379 14 34.216 14 33.2126C14 31.9688 14.6867 30.8315 15.3049 30.3074C15.838 29.8554 16.3276 29.6524 16.5394 29.5646C16.5725 29.5508 16.5989 29.5399 16.6175 29.5313C17.6859 29.0323 19.0256 28.4064 20.5478 27.6953C24.7304 25.7413 30.2912 23.1435 35.3895 20.7636C38.8663 19.1406 42.1282 17.6212 44.5899 16.4752C44.8408 16.3584 45.0823 16.246 45.314 16.1381C47.3552 15.1877 48.6413 14.5889 49.0279 14.4199ZM28.3396 36.0502L44.3542 23.9998C44.3542 23.9998 44.9836 23.5933 45.3551 23.9998C45.7265 24.4062 45.3551 25.0953 45.3551 25.0953L33.3442 38.2412L31.3423 47.0051L28.3396 36.0502Z"
                 fill="white" />
@@ -502,7 +498,7 @@
           <!--whatsapp-->
           <div class="contacts-wrapper__item">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" fill="#2B2B2B" />
+              <ellipse cx="34" cy="33.871" rx="34" ry="33.871"/>
               <path
                 d="M48.1557 19.856C44.3835 16.082 39.3673 14.002 34.023 14C23.0104 14 14.048 22.958 14.044 33.97C14.042 37.49 14.962 40.926 16.7101 43.954L14 54L24.4665 51.526C27.3847 53.118 30.6688 53.956 34.013 53.958H34.021C45.0315 53.958 53.994 44.998 54 33.988C54.004 28.65 51.9279 23.632 48.1557 19.856ZM43.7975 41.108C43.3815 42.274 41.3434 43.398 40.4273 43.48C39.5113 43.564 38.6532 43.894 34.437 42.232C29.3628 40.232 26.1586 35.03 25.9106 34.698C25.6606 34.364 23.8725 31.992 23.8725 29.536C23.8725 27.08 25.1626 25.872 25.6206 25.374C26.0786 24.874 26.6186 24.75 26.9526 24.75C27.2847 24.75 27.6187 24.75 27.9087 24.762C28.2647 24.776 28.6587 24.794 29.0327 25.624C29.4768 26.612 30.4468 29.08 30.5708 29.33C30.6948 29.58 30.7788 29.872 30.6128 30.204C30.4468 30.536 30.3628 30.744 30.1148 31.036C29.8648 31.328 29.5908 31.686 29.3668 31.91C29.1168 32.158 28.8567 32.43 29.1468 32.928C29.4388 33.428 30.4388 35.062 31.9229 36.384C33.831 38.084 35.4371 38.61 35.9371 38.862C36.4371 39.112 36.7271 39.07 37.0191 38.736C37.3112 38.404 38.2672 37.28 38.5992 36.78C38.9312 36.28 39.2653 36.364 39.7233 36.53C40.1813 36.696 42.6354 37.904 43.1335 38.154C43.6335 38.404 43.9655 38.528 44.0895 38.736C44.2135 38.942 44.2135 39.942 43.7975 41.108Z"
                 fill="white" />
@@ -513,7 +509,7 @@
           <!--phone-->
           <div class="contacts-wrapper__item">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" fill="#2B2B2B" />
+              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" />
               <path
                 d="M45.9556 31.3111L41.0667 26.4222C40.4444 25.8 40.2667 24.9333 40.5111 24.1556C41.3333 21.6667 41.7778 19 41.7778 16.2222C41.7778 15 42.7778 14 44 14H51.7778C53 14 54 15 54 16.2222C54 37.0889 37.0889 54 16.2222 54C15 54 14 53 14 51.7778V44.0222C14 42.8 15 41.8 16.2222 41.8C18.9778 41.8 21.6667 41.3556 24.1556 40.5333C24.9333 40.2667 25.8222 40.4667 26.4222 41.0667L31.3111 45.9556C37.6 42.7333 42.7556 37.6 45.9556 31.3111Z"
                 fill="white" />
@@ -524,7 +520,7 @@
           <!--location-->
           <div class="contacts-wrapper__item">
             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="34" cy="33.871" rx="34" ry="33.871" fill="#2B2B2B" />
+              <ellipse cx="34" cy="33.871" rx="34" ry="33.871"/>
               <path
                 d="M34 14C26.26 14 20 20.26 20 28C20 38.5 34 54 34 54C34 54 48 38.5 48 28C48 20.26 41.74 14 34 14ZM34 33C31.24 33 29 30.76 29 28C29 25.24 31.24 23 34 23C36.76 23 39 25.24 39 28C39 30.76 36.76 33 34 33Z"
                 fill="white" />
@@ -568,12 +564,30 @@
 
 
   </footer>
-
+  
+  <script>
+ var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         false,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+  </script>
   <script src="app.js"></script>
 
 	<script src="libs/inputmask.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-  <script type="text/javascript" src="./js/components/wow.min.js"></script>
+  
 </body>
 
 </html>

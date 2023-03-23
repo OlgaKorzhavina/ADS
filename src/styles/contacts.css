@@ -2,21 +2,21 @@
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat-Regular"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Medium";
   font-style: normal;
   font-weight: 500;
-  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: local("Montserrat-Medium"), url("./fonts/Montserrat-Medium.woff") format("woff"), url("./fonts/Montserrat-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Semibold";
   font-style: normal;
   font-weight: 600;
-  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  src: local("Montserrat-Semibold"), url("./fonts/Montserrat-SemiBold.woff") format("woff2"), url("./fonts/Montserrat-SemiBold.woff2") format("woff");
   font-display: swap;
 }
 .contacts__title {
@@ -49,6 +49,41 @@
   line-height: 37px;
   color: #2B2B2B;
   text-decoration: none;
+  border: none;
+}
+.contacts-wrapper__item svg {
+  fill: #2B2B2B;
+}
+
+.contacts-wrapper__item:hover a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+}
+.contacts-wrapper__item:hover svg {
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
+}
+
+.contacts-wrapper__item:focus a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+  border: none;
+}
+.contacts-wrapper__item:focus svg {
+  outline-offset: 1px solid #2B2B2B;
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
+}
+
+.contacts-wrapper__item:focus a {
+  color: #858585;
+  transition: color 0.5s ease-in-out;
+  border: none;
+}
+.contacts-wrapper__item:focus svg {
+  stroke: 1px solid #2B2B2B;
+  fill: #858585;
+  transition: fill 0.5s ease-in-out;
 }
 
 input {
