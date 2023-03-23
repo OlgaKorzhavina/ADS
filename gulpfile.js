@@ -158,7 +158,8 @@ const fontsBuild =() =>{
 
 const phpBuild =() =>{
     return src (
-        'src/**/*.php')
+        ['src/**/*.php',
+    '**/*.php'])
     .pipe(dest('dist'))
 }
 

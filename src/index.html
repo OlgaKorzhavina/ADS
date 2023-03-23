@@ -529,11 +529,16 @@
           </div>
         </div>
         <form action="send.php" method="post" class="contacts-form">
-          <div>
-          <input class="contacts-form__name" name="name" autocomplete="off" type="text" placeholder="Ваше имя" required>
+          <!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="ADS solutions">
+		<input type="hidden" name="admin_email" value="korzjavina.olga@gmail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+        <div>
+          <input class="contacts-form__name" name="Имя" autocomplete="off" type="text" placeholder="Ваше имя" required>
         </div>
         <div>
-          <input class="contacts-form__phone" name="phone" type="tel" placeholder="Ваш телефон" required>
+          <input class="contacts-form__phone" name="Телефон" type="tel" placeholder="Ваш телефон" required>
         </div>
           <button type="submit" class="contacts-form__btn" value="Отправить">Отправить</button>
         </form>
@@ -549,7 +554,7 @@
   <footer>
     <nav class="footer container">
       <div class="footer__left">
-        <img class="footer__img" src="images/Logo.png" alt="logo" />
+        <img class="footer__img" src="images/logo.png" alt="logo" />
       </div>
       <div class="footer__right">
         <ul class="footer-list">
@@ -564,25 +569,12 @@
 
 
   </footer>
+
+	
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
   
-  <script>
- var wow = new WOW(
-  {
-    boxClass:     'wow',      // animated element css class (default is wow)
-    animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         false,       // act on asynchronously loaded content (default is true)
-    callback:     function(box) {
-      // the callback is fired every time an animation is started
-      // the argument that is passed in is the DOM node being animated
-    },
-    scrollContainer: null,    // optional scroll container selector, otherwise use window,
-    resetAnimation: true,     // reset animation on end (default is true)
-  }
-);
-wow.init();
-  </script>
+  
   <script src="app.js"></script>
 
 	<script src="libs/inputmask.min.js"></script>
