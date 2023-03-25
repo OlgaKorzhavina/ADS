@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
   validationForm
     .addField('.contacts-form__name', [{
       rule: 'minLength',
-      value: 3,
+      value: 2,
       errorMessage: "Недостаточное количество символов"
     },
     {
       rule: 'maxLength',
-      value: 5,
+      value: 10,
       errorMessage: "Вы ввели больше, чем положено"
     }
   ])

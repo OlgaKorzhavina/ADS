@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
        
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
+            hintContent: 'г. Химки, ул. Пожарского, 22А'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.

@@ -1,8 +1,8 @@
-let content = document.querySelector(".parts-card__hidden");
+let content = document.querySelector(".hidden");
 let show = document.getElementById("showContent");
 
 show.addEventListener("click", () => {
-    content.classList.toggle('parts-card__hidden--visible');
+    content.classList.toggle('hidden--visible');
     show.innerText = 'Свернуть все';
 
     if (show.innerText="Свернуть все"){

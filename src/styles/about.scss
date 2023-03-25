@@ -1,29 +1,30 @@
 @import "common.scss";
-.about{
-    @include marginBlock;
-    text-align: center;
+
+.about {
+  @include marginBlock;
+  text-align: center;
 }
 
-.about-text__title{
+.about-text__title {
   @include fadeInOut;
 }
 
-.about-text__descr{
+.about-text__descr {
   @include fadeInOut;
-    margin: 0 auto;
-    max-width: 1518px;
-    text-align: center;
-    line-height: 37px;
-margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1518px;
+  text-align: center;
+  line-height: 37px;
+  margin-bottom: 50px;
 }
 
-.about-direction__title{
+.about__title {
   @include fadeInOut;
 }
 
-.about-direction{
+.about-direction {
   @include fadeInOut;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 70px;   
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 70px;
 }

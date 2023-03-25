@@ -526,6 +526,8 @@ template {
   font-size: 25px;
   text-decoration: none;
   color: #2B2B2B;
+  border: none;
+  outline: none;
 }
 
 .header-list a:after,
@@ -677,13 +679,13 @@ template {
 }
 
 .btn-stroke {
+  position: relative;
   display: flex;
   margin: 0 auto;
   margin-top: 78px;
   padding: 12px 26px;
   background-color: transparent;
-  outline: 1px solid #FFF500;
-  border: none;
+  border: 1px solid #FFF500;
   border-radius: 50px;
 }
 .btn-stroke a {
@@ -692,6 +694,8 @@ template {
   font-weight: 600;
   font-size: 20px;
   color: #FFF500;
+  border: none;
+  outline: none;
   text-decoration: none;
 }
 
@@ -766,7 +770,7 @@ template {
   margin-bottom: 50px;
 }
 
-.about-direction__title {
+.about__title {
   animation: fadeInUp;
   animation-duration: 1s;
 }
@@ -831,6 +835,7 @@ template {
   background-color: #FFF500;
   padding: 20px 20px;
   border-radius: 50px;
+  border: 1px solid #FFF500;
 }
 .products-cards__descr a {
   font-family: "Montserrat Regular", "Arial", sans-serif;
@@ -839,6 +844,8 @@ template {
   font-size: 20px;
   text-decoration: none;
   color: #2B2B2B;
+  border: none;
+  outline: none;
 }
 .products-cards__descr p {
   line-height: 24px;
@@ -846,8 +853,7 @@ template {
 
 .products-cards__descr:hover {
   background-color: transparent;
-  outline: 1px solid #2B2B2B;
-  border-radius: 50px;
+  border: 1px solid #2B2B2B;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
@@ -987,13 +993,18 @@ template {
   transform: scale(1.2);
 }
 
-.four-item__hidden {
+.four-hidden {
   display: none;
+}
+
+.parts-button {
+  display: flex;
+  justify-content: center;
 }
 
 .parts-btn {
   padding: 25px 50px;
-  border: none;
+  border: 1px solid #2B2B2B;
   border-radius: 50px;
   font-family: "Montserrat Regular";
   font-style: normal;
@@ -1005,18 +1016,17 @@ template {
 
 .parts-btn:hover {
   background-color: transparent;
-  outline: 1px solid #2B2B2B;
   color: #2B2B2B;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
-.parts-card__hidden {
+.hidden {
   height: 0;
   display: none;
   transition: height 0.3s;
 }
 
-.parts-card__hidden--visible {
+.hidden--visible {
   display: grid;
   height: 100%;
 }
@@ -1158,6 +1168,7 @@ input {
   margin-top: -65px;
   margin-left: 37px;
   font-size: 12px !important;
+  font-family: "Montserrat Regular", sans-serif !important;
 }
 
 .ymaps-2-1-79-float-button-icon,
@@ -1311,7 +1322,7 @@ footer {
   .four-item {
     display: none;
   }
-  .four-item__hidden {
+  .four-hidden {
     display: flex;
   }
   .contacts-wrapper__item svg {
@@ -1461,7 +1472,7 @@ footer {
   .four-item {
     display: flex;
   }
-  .four-item__hidden {
+  .four-hidden {
     display: none;
   }
   .footer {
@@ -1551,6 +1562,7 @@ section {
 
 h1 {
   margin: 0;
+  text-align: center;
   font-family: "Montserrat Semibold", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;

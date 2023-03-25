@@ -26,8 +26,8 @@
   box-sizing: border-box;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -46,6 +46,7 @@ section {
 
 h1 {
   @include clear-margin;
+  text-align: center;
   font-family: 'Montserrat Semibold', "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -111,59 +112,58 @@ img {
   font-size: 20px;
 }
 
-@media (max-width:1290px){
+@media (max-width:1290px) {
   section {
     @include marginBlockTablet;
     margin: 0 auto;
   }
-  
-    
+
+
   h2 {
     margin-bottom: 20px;
     font-size: 30px;
-   }
-  
+  }
+
   h3 {
     margin-bottom: 20px;
     font-size: 20px;
   }
-  
+
   p {
     font-size: 16px;
     line-height: 28px;
   }
-  
-  .parts-btn{
+
+  .parts-btn {
     padding: 12px 25px;
     font-size: 16px;
-}
+  }
 }
 
-@media (max-width:570px){
+@media (max-width:570px) {
   section {
     @include marginBlockMobile;
     margin: 0 auto;
   }
-  
-    
+
+
   h2 {
     margin-bottom: 10px;
     font-size: 20px;
-   }
-  
+  }
+
   h3 {
     margin-bottom: 20px;
     font-size: 16px;
   }
-  
+
   p {
     font-size: 14px;
     line-height: 26px;
   }
-  
-  .parts-btn{
+
+  .parts-btn {
     padding: 12px 25px;
     font-size: 16px;
+  }
 }
-}
-

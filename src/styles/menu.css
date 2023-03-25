@@ -73,6 +73,8 @@
   font-size: 25px;
   text-decoration: none;
   color: #2B2B2B;
+  border: none;
+  outline: none;
 }
 
 .header-list a:after,

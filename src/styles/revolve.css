@@ -1,0 +1,14 @@
+.revolve__title {
+  text-align: center;
+}
+.revolve__descr {
+  margin-top: 100px;
+}
+.revolve__link {
+  display: flex;
+  justify-content: center;
+}
+.revolve__link a {
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=revolve.css.map */

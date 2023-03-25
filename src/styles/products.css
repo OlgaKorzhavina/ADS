@@ -49,6 +49,7 @@
   background-color: #FFF500;
   padding: 20px 20px;
   border-radius: 50px;
+  border: 1px solid #FFF500;
 }
 .products-cards__descr a {
   font-family: "Montserrat Regular", "Arial", sans-serif;
@@ -57,6 +58,8 @@
   font-size: 20px;
   text-decoration: none;
   color: #2B2B2B;
+  border: none;
+  outline: none;
 }
 .products-cards__descr p {
   line-height: 24px;
@@ -64,8 +67,7 @@
 
 .products-cards__descr:hover {
   background-color: transparent;
-  outline: 1px solid #2B2B2B;
-  border-radius: 50px;
+  border: 1px solid #2B2B2B;
   transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 

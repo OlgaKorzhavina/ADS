@@ -2,21 +2,21 @@
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: local("Montserrat-Regular"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Medium";
   font-style: normal;
   font-weight: 500;
-  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: local("Montserrat-Medium"), url("./fonts/Montserrat-Medium.woff") format("woff"), url("./fonts/Montserrat-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Semibold";
   font-style: normal;
   font-weight: 600;
-  src: local("Montserrat-Semibold"), url("../fonts/Montserrat-SemiBold.woff") format("woff2"), url("../fonts/Montserrat-SemiBold.woff2") format("woff");
+  src: local("Montserrat-Semibold"), url("./fonts/Montserrat-SemiBold.woff") format("woff2"), url("./fonts/Montserrat-SemiBold.woff2") format("woff");
   font-display: swap;
 }
 .about {
@@ -39,7 +39,7 @@
   margin-bottom: 50px;
 }
 
-.about-direction__title {
+.about__title {
   animation: fadeInUp;
   animation-duration: 1s;
 }

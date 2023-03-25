@@ -41,13 +41,16 @@
     transform: scale(1.2);
 }
 
-.four-item__hidden{display: none;}
+.four-hidden{display: none;}
 
-
+.parts-button{
+    display: flex;
+    justify-content: center;
+}
 
 .parts-btn {
     padding: 25px 50px;
-    border: none;
+border:1px solid $Grafit;
     border-radius: 50px;
     font-family: 'Montserrat Regular';
     font-style: normal;
@@ -59,18 +62,17 @@
 
 .parts-btn:hover {
     background-color: transparent;
-    outline: 1px solid $Grafit;
     color: $Grafit;
     transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
-.parts-card__hidden {
+.hidden {
     height: 0;
     display: none;
     transition: height 0.3s;
 }
 
-.parts-card__hidden--visible{
+.hidden--visible{
     display: grid;
     height: 100%;
 }

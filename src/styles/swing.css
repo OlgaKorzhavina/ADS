@@ -36,10 +36,10 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-.swing-content__down {
+.swing-down {
   margin-left: 30px;
 }
-.swing-content__down li::marker {
+.swing-down li::marker {
   color: #FFF500;
   font-size: 50px;
 }

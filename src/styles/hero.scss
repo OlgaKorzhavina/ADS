@@ -1,129 +1,132 @@
 @import "common.scss";
+
 .hero {
   @include marginBlock;
   display: flex;
-    align-items: center;
+  align-items: center;
   height: 870px;
- background-image: url('images/hero1920.jpg');
- background-size: cover;
- background-repeat: no-repeat;
- background-attachment: fixed;
+  background-image: url('images/hero1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text__transparent {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  color: transparent;
+  font-size: 6vw;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px $moonStone;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: 2s linear slidein;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: 2s linear slidewrap;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
   }
 
-  .hero-text{
-    text-align: center;
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slidewrap {
+  from {
+    transform: translateX(100%);
   }
 
-  .hero-text__transparent{
-    font-family: "Montserrat Semibold";
-    font-style: normal;
-    font-weight: 600;
-    color: transparent;
-    font-size: 6vw;
-    text-transform: uppercase;
-    -webkit-text-stroke: 2px $moonStone;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: 2s linear slidein;
+  to {
+    transform: translateX(0%);
   }
+}
 
-  .hero-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    animation: 2s linear slidewrap;
-  }
+.hero-text__white,
+.hero-text__yellow {
+  font-family: "Montserrat Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+}
 
-  @keyframes slidein {
-    from {
-      transform: translateX(-100%);
-    }
-  
-    to {
-      transform: translateX(0%);
-    }
-  }
+.hero-text__white {
+  color: $snowWhite;
+}
 
-  @keyframes slidewrap {
-    from {
-      transform: translateX(100%);
-    }
-  
-    to {
-      transform: translateX(0%);
-    }
-  }
+.hero-text__yellow {
+  color: $yellowAmber;
+}
 
-  .hero-text__white,
-  .hero-text__yellow{
-    font-family: "Montserrat Semibold";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 5.5vw;
-    text-transform: uppercase;
-  }
+.btn-stroke {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 230px;
+  margin-top: 78px;
+  padding: 12px 26px;
+  background-color: transparent;
+  border: 1px solid $yellowAmber;
+  border-radius: 50px;
 
-  .hero-text__white{
-    color: $snowWhite;
-  }
 
-  .hero-text__yellow{
-    color: $yellowAmber;
-  }
 
-  .btn-stroke{
-    display: flex;
-    margin: 0 auto;
-    margin-top: 78px;
-    padding: 12px 26px;
-    background-color: transparent;
-    outline: 1px solid $yellowAmber;
-    border: none;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    
-    a{
-      font-family: "Montserrat Regular";
+  a {
+    font-family: "Montserrat Regular";
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     color: $yellowAmber;
+    border: none;
+    outline: none;
     text-decoration: none;
-    }
   }
-
-  .btn-stroke:hover{
-    background-color: $yellowAmber;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  .btn-stroke:hover a{
-    color: $Grafit;
-    transition: color 0.5s ease-in-out;
-  }
+}
 
 
-  .btn-stroke:focus{
-    background-color: $yellowAmber;
-    transition: background-color 0.5s ease-in-out;
-  }
+.btn-stroke:hover {
+  background-color: $yellowAmber;
+  transition: background-color 0.5s ease-in-out;
+}
 
-  .btn-stroke:focus a{
-    color: $Grafit;
-    transition: color 0.5s ease-in-out;
-  }
-
-
-  .btn-stroke:active{
-    background-color: $Grafit;
-    transition: background-color 0.5s ease-in-out;
-  }
-
-  .btn-stroke:active a{
-    color: $yellowAmber;
-    transition: color 0.5s ease-in-out;
-  }
+.btn-stroke:hover a {
+  color: $Grafit;
+  transition: color 0.5s ease-in-out;
+}
 
 
+.btn-stroke:focus {
+  background-color: $yellowAmber;
+  transition: background-color 0.5s ease-in-out;
+}
 
-  
+.btn-stroke:focus a {
+  color: $Grafit;
+  transition: color 0.5s ease-in-out;
+}
+
+
+.btn-stroke:active {
+  background-color: $Grafit;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-stroke:active a {
+  color: $yellowAmber;
+  transition: color 0.5s ease-in-out;
+}

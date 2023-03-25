@@ -1,111 +1,121 @@
 @import "common.scss";
-  
-  .burger {
-    display: none;
-  }
- 
-  .header {
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    margin: auto;
-    background-color: $moonStone;
-    z-index: 1000;
-    box-shadow: 0 1px 10px 1px rgba(0,0,0,.3);
-  }
 
- .burger-close{
+.burger {
   display: none;
- }
+}
 
- .burger-close--active{
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background-color: $moonStone;
+  z-index: 1000;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, .3);
+}
+
+.burger-close {
+  display: none;
+}
+
+.burger-close--active {
   display: block;
   margin-bottom: 16px;
   background-color: transparent;
   border: none;
- }
+}
 
-  .header__nav {
-    @include list-reset;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header-list,
-  .footer-list {
-    display: flex;
-    list-style: none;
-    li:not(:last-child){
-      margin-right: 100px;
-    }
-    a{
-      position: relative;
-      cursor: pointer;
-      line-height: 1;
-      font-family: 'Montserrat Regular';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      text-decoration: none;
-      color: $Grafit;
-    }
+.header__nav {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list,
+.footer-list {
+  display: flex;
+  list-style: none;
+
+  li:not(:last-child) {
+    margin-right: 100px;
   }
 
- 
-  .header-list a:after,
-  .footer-list a:after {
-    display: block;
-    position: absolute;
-    left: 0; 
-    width: 0;
-    height: 1px;
-    background-color: $Grafit;
-    content: "";
-    transition: width 0.3s ease-out;
-  }
-  
-  .header-list a:hover:after,
-  .header-list a:focus:after,
-  .footer-list a:hover:after,
-  .footer-list a:focus:after {
-    width: 100%; 
-  }
-  
-  .header-submenu{
-    max-width: 280px;
-    padding-top: 33px;
-    position: absolute;
-    display: none;
-    background-color: rgba(231, 231, 231, 0.8);
-    opacity: 0;
-    animation: ani 0.5s forwards;
-    li{
-      width: 100%;
-      padding: 10px;
-      border-bottom: 1px solid $snowWhite;
-      list-style: none;
-    }
-
-    &__list a{
-      font-size: 20px;
-    }
-  }
-
-  @keyframes ani {
-    0% {opacity: 0;}
-    100% {opacity: 0.8;}
-  }
-
-  .header-dropdown:hover .header-submenu{
-    display: block;
-    z-index: 10;
-  }
-  
-  .header-submenu a {
-    color: $Grafit;
-    padding: 12px 0;
-    margin: 0 16px;
+  a {
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
     text-decoration: none;
-    display: block;
+    color: $Grafit;
+    border: none;
+    outline: none;
   }
+}
+
+
+.header-list a:after,
+.footer-list a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: $Grafit;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.header-list a:hover:after,
+.header-list a:focus:after,
+.footer-list a:hover:after,
+.footer-list a:focus:after {
+  width: 100%;
+}
+
+.header-submenu {
+  max-width: 280px;
+  padding-top: 33px;
+  position: absolute;
+  display: none;
+  background-color: rgba(231, 231, 231, 0.8);
+  opacity: 0;
+  animation: ani 0.5s forwards;
+
+  li {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid $snowWhite;
+    list-style: none;
+  }
+
+  &__list a {
+    font-size: 20px;
+  }
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.header-dropdown:hover .header-submenu {
+  display: block;
+  z-index: 10;
+}
+
+.header-submenu a {
+  color: $Grafit;
+  padding: 12px 0;
+  margin: 0 16px;
+  text-decoration: none;
+  display: block;
+}

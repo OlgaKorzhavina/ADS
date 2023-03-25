@@ -1,0 +1,20 @@
+.revolve {
+    &__title {
+        text-align: center;
+    }
+
+    &__descr {
+        margin-top: 100px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+
+        a {
+            border: none;
+            outline: none;
+        }
+
+    }
+}

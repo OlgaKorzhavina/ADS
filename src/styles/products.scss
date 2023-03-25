@@ -28,8 +28,8 @@
     text-align: center;
     background-color: $yellowAmber;
     padding: 20px 20px;
-    -webkit-border-radius: 50px;
     border-radius: 50px;
+    border: 1px solid $yellowAmber;
     a{
         font-family: 'Montserrat Regular', "Arial", sans-serif;
         font-style: normal;
@@ -37,6 +37,8 @@
         font-size: 20px;
         text-decoration: none;
         color: $Grafit;
+        border: none;
+        outline: none;
     }
     p{
         line-height: 24px;
@@ -45,15 +47,14 @@
 
 .products-cards__descr:hover{
     background-color: transparent;
-    outline: 1px solid $Grafit;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
+    border: 1px solid $Grafit;
     transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
 }
 
 .products-cards__descr:focus{
     background-color: transparent;
-    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
     border-radius: 50px;
     outline: 1px solid $Grafit;
     transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
