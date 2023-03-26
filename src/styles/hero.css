@@ -98,14 +98,11 @@
   background-color: transparent;
   border: 1px solid #FFF500;
   border-radius: 50px;
-}
-.btn-stroke a {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   color: #FFF500;
-  border: none;
   outline: none;
   text-decoration: none;
 }
@@ -115,7 +112,7 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:hover a {
+.btn-stroke:hover {
   color: #2B2B2B;
   transition: color 0.5s ease-in-out;
 }
@@ -125,7 +122,7 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:focus a {
+.btn-stroke:focus {
   color: #2B2B2B;
   transition: color 0.5s ease-in-out;
 }

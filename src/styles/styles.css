@@ -681,20 +681,19 @@ template {
 .btn-stroke {
   position: relative;
   display: flex;
+  justify-content: center;
   margin: 0 auto;
+  max-width: 230px;
   margin-top: 78px;
   padding: 12px 26px;
   background-color: transparent;
   border: 1px solid #FFF500;
   border-radius: 50px;
-}
-.btn-stroke a {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   color: #FFF500;
-  border: none;
   outline: none;
   text-decoration: none;
 }
@@ -704,7 +703,7 @@ template {
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:hover a {
+.btn-stroke:hover {
   color: #2B2B2B;
   transition: color 0.5s ease-in-out;
 }
@@ -714,7 +713,7 @@ template {
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:focus a {
+.btn-stroke:focus {
   color: #2B2B2B;
   transition: color 0.5s ease-in-out;
 }
@@ -1074,6 +1073,7 @@ template {
   text-align: center;
 }
 .contacts-wrapper__item a {
+  position: relative;
   padding-top: 30px;
   font-family: "Montserrat Regular";
   font-style: normal;
@@ -1083,6 +1083,7 @@ template {
   color: #2B2B2B;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 .contacts-wrapper__item svg {
   fill: #2B2B2B;
@@ -1101,6 +1102,7 @@ template {
   color: #858585;
   transition: color 0.5s ease-in-out;
   border: none;
+  outline: none;
 }
 .contacts-wrapper__item:focus svg {
   outline-offset: 1px solid #2B2B2B;
@@ -1108,15 +1110,20 @@ template {
   transition: fill 0.5s ease-in-out;
 }
 
-.contacts-wrapper__item:focus a {
-  color: #858585;
-  transition: color 0.5s ease-in-out;
-  border: none;
+.contacts-wrapper__item a:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2B2B2B;
+  content: "";
+  transition: width 0.3s ease-out;
 }
-.contacts-wrapper__item:focus svg {
-  stroke: 1px solid #2B2B2B;
-  fill: #858585;
-  transition: fill 0.5s ease-in-out;
+
+.contacts-wrapper__item a:hover:after,
+.contacts-wrapper__item a:focus:after {
+  width: 100%;
 }
 
 input {
@@ -1531,6 +1538,11 @@ footer {
   .service-content__item a,
   .contacts-wrapper__item a {
     padding-top: 5px;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    flex-direction: column;
   }
 }
 * {

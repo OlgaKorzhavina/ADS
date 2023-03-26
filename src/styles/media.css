@@ -287,4 +287,9 @@
   .contacts-wrapper__item a {
     padding-top: 5px;
   }
+}
+@media (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=media.css.map */

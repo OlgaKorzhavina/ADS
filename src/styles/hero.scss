@@ -83,19 +83,14 @@
   background-color: transparent;
   border: 1px solid $yellowAmber;
   border-radius: 50px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: $yellowAmber;
+  outline: none;
+  text-decoration: none;
 
-
-
-  a {
-    font-family: "Montserrat Regular";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: $yellowAmber;
-    border: none;
-    outline: none;
-    text-decoration: none;
-  }
 }
 
 
@@ -104,7 +99,7 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:hover a {
+.btn-stroke:hover{
   color: $Grafit;
   transition: color 0.5s ease-in-out;
 }
@@ -115,7 +110,7 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.btn-stroke:focus a {
+.btn-stroke:focus {
   color: $Grafit;
   transition: color 0.5s ease-in-out;
 }

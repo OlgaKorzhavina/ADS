@@ -41,6 +41,7 @@
   text-align: center;
 }
 .contacts-wrapper__item a {
+  position: relative;
   padding-top: 30px;
   font-family: "Montserrat Regular";
   font-style: normal;
@@ -50,6 +51,7 @@
   color: #2B2B2B;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 .contacts-wrapper__item svg {
   fill: #2B2B2B;
@@ -68,6 +70,7 @@
   color: #858585;
   transition: color 0.5s ease-in-out;
   border: none;
+  outline: none;
 }
 .contacts-wrapper__item:focus svg {
   outline-offset: 1px solid #2B2B2B;
@@ -75,15 +78,20 @@
   transition: fill 0.5s ease-in-out;
 }
 
-.contacts-wrapper__item:focus a {
-  color: #858585;
-  transition: color 0.5s ease-in-out;
-  border: none;
+.contacts-wrapper__item a:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2B2B2B;
+  content: "";
+  transition: width 0.3s ease-out;
 }
-.contacts-wrapper__item:focus svg {
-  stroke: 1px solid #2B2B2B;
-  fill: #858585;
-  transition: fill 0.5s ease-in-out;
+
+.contacts-wrapper__item a:hover:after,
+.contacts-wrapper__item a:focus:after {
+  width: 100%;
 }
 
 input {
