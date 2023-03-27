@@ -536,12 +536,12 @@
             <a>Московская область, г. Химки, ул. Пожарского, 22А</a>
           </div>
         </div>
-        <form action="mail.php" method="POST" class="contacts-form">
-          <!-- Hidden Required Fields
-          <input type="hidden" name="project_name" value="ADS solutions">
-          <input type="hidden" name="admin_email" value="korzjavina.olga@gmail.com">
+        <form class="contacts-form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="ADS">
+          <input type="hidden" name="admin_email" value="simplemailfortasting@gmail.com">
           <input type="hidden" name="form_subject" value="Заявка с сайта">
-           END Hidden Required Fields -->
+          <!-- END Hidden Required Fields -->
           <div>
             <input class="contacts-form__name" name="Имя" autocomplete="off" type="text" placeholder="Ваше имя"
               required>
@@ -549,18 +549,10 @@
           <div>
             <input class="contacts-form__phone" name="Телефон" type="tel" placeholder="Ваш телефон" required>
           </div>
-          <button type="submit" class="contacts-form__btn" value="Отправить">Отправить</button>
+          <button type="submit" class="contacts-form__btn" name="otprav" value="Отправить">Отправить</button>
         </form>
 
-        <form action="sender.php" method="post">
-          <input type="text" class="name" name="name" placeholder="Имя" required>
-          <input type="text" name="surname" placeholder="Фамилия" required>
-          <input type="text" class="phone" name="phone" placeholder="Телефон">
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
-          <button type="button" class="send-form">Отправить форму</button>
-          <div class="status"></div>
-      </form>
+        
       </div>
       <div id="map"></div>
     </section>
@@ -588,7 +580,7 @@
 
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="script.js"></script>
+	<script src="script.js"></script>
 
 
   <script src="app.js"></script>
