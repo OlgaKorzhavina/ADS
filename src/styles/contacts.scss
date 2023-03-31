@@ -1,70 +1,67 @@
 @import "common.scss";
 
 .contacts__title {
-    @include fadeInOut;
+  @include fadeInOut;
 }
 
 .contacts-wrapper {
-    @include fadeInOut;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
-    margin-bottom: 50px;
+  @include fadeInOut;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .contacts-wrapper__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  a {
+    position: relative;
+    padding-top: 30px;
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: $Grafit;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
 
-    a {
-        position: relative;
-        padding-top: 30px;
-        font-family: 'Montserrat Regular';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 37px;
-        color: $Grafit;
-        text-decoration: none;
-        border: none;
-        outline: none;
-    }
-
-    svg {
-        fill: $Grafit;
-    }
+  svg {
+    fill: $Grafit;
+  }
 }
 
 .contacts-wrapper__item:hover {
-    a {
-        color: $lightGrafit;
-        transition: color 0.5s ease-in-out;
-    }
+  a {
+    color: $lightGrafit;
+    transition: color 0.5s ease-in-out;
+  }
 
-    svg {
-        fill: $lightGrafit;
-        transition: fill 0.5s ease-in-out;
-    }
-
+  svg {
+    fill: $lightGrafit;
+    transition: fill 0.5s ease-in-out;
+  }
 }
 
 .contacts-wrapper__item:focus {
-    a {
-        color: $lightGrafit;
-        transition: color 0.5s ease-in-out;
-        border: none;
-        outline: none;
-    }
+  a {
+    color: $lightGrafit;
+    transition: color 0.5s ease-in-out;
+    border: none;
+    outline: none;
+  }
 
-    svg {
-        outline-offset: 1px solid $Grafit;
-        fill: $lightGrafit;
-        transition: fill 0.5s ease-in-out;
-    }
-
+  svg {
+    outline-offset: 1px solid $Grafit;
+    fill: $lightGrafit;
+    transition: fill 0.5s ease-in-out;
+  }
 }
 
 .contacts-wrapper__item a:after {
@@ -80,58 +77,62 @@
 
 .contacts-wrapper__item a:hover:after,
 .contacts-wrapper__item a:focus:after {
-width: 100%
+  width: 100%;
 }
 
 input {
-    margin-right: 30px;
-    align-items: center;
-    padding: 21px 35px;
-    background-color: $snowWhite;
-    border: 1px solid $Grafit;
-    border-radius: 50px;
-    font-family: 'Montserrat Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+  margin-right: 30px;
+  align-items: center;
+  padding: 21px 35px;
+  background-color: $snowWhite;
+  border: 1px solid $Grafit;
+  border-radius: 50px;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .contacts-form {
-    @include fadeInOut;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+  @include fadeInOut;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-form__btn--disabled {
+  background-color: $lightGrafit;
 }
 
 .contacts-form__btn {
-    font-family: 'Montserrat Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 20px 70px;
-    background-color: $yellowAmber;
-    border: none;
-    border-radius: 50px;
-    color: $Grafit;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 70px;
+  background-color: $yellowAmber;
+  border: none;
+  border-radius: 50px;
+  color: $Grafit;
 }
 
 .contacts-form__btn:hover {
-    background-color: $Grafit;
-    border: none;
-    border-radius: 50px;
-    color: $snowWhite;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  background-color: $Grafit;
+  border: none;
+  border-radius: 50px;
+  color: $snowWhite;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .just-validate-error-field {
-    position: relative;
+  position: relative;
 }
 
 .just-validate-error-label {
-    margin-top: -65px;
-    margin-left: 37px;
-    font-size: 12px !important;
-    font-family: 'Montserrat Regular', sans-serif !important;
+  margin-top: -65px;
+  margin-left: 37px;
+  font-size: 12px !important;
+  font-family: "Montserrat Regular", sans-serif !important;
 }
 
 .ymaps-2-1-79-float-button-icon,
@@ -148,23 +149,20 @@ input {
 .ymaps-2-1-79-controls__toolbar_left,
 .ymaps-2-1-79-map-copyrights-promo,
 .ymaps-2-1-79-controls__toolbar {
-    display: none !important;
+  display: none !important;
 }
 
-
-
-
 #map {
-    display: flex;
-    height: 566px;
-    width: 100%;
+  display: flex;
+  height: 566px;
+  width: 100%;
 }
 
 [class*="ground-pane"] {
-    filter: invert(100%) grayscale(1) brightness(150%);
-    // filter: invert(100%) hue-rotate(-172deg) brightness(250%);
-    // -ms-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
-    // -webkit-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
-    // -moz-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
-    // -o-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+  filter: invert(100%) grayscale(1) brightness(150%);
+  // filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+  // -ms-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+  // -webkit-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+  // -moz-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
+  // -o-filter: invert(100%) hue-rotate(-172deg) brightness(250%);
 }

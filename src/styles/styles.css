@@ -615,7 +615,7 @@ template {
   display: flex;
   align-items: center;
   height: 870px;
-  background-image: url("images/hero1920.jpg");
+  background-image: url("images/hero1920.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

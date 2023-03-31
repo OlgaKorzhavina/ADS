@@ -60,10 +60,8 @@ const images = () =>{
         'src/images/**/*.jpeg',
         'src/images/**/*.png',
         'src/images/*.svg',
-        'src/images/svg/**/*.jpg',
-        'src/images/svg/**/*.jpeg',
-        'src/images/svg/**/*.png',
-        'src/images/svg/*.svg'
+        'src/images/*.webp'
+        
     ])
     .pipe(image())
     .pipe(dest('dist/images'))
