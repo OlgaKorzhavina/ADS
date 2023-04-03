@@ -615,7 +615,7 @@ template {
   display: flex;
   align-items: center;
   height: 870px;
-  background-image: url("images/hero1920.jpg");
+  background-image: url("images/hero1920.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -682,6 +682,7 @@ template {
   position: relative;
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
   max-width: 230px;
   margin-top: 78px;
@@ -1145,6 +1146,10 @@ input {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+}
+
+.contacts-form__btn--disabled {
+  background-color: #858585;
 }
 
 .contacts-form__btn {
@@ -1678,5 +1683,10 @@ img {
   .parts-btn {
     padding: 12px 25px;
     font-size: 16px;
+  }
+}
+@media (max-width: 317px) {
+  .about-direction {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
