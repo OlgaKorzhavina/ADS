@@ -914,7 +914,7 @@ template {
 }
 
 .service-wrapper__middle {
-  background-image: url("./images/service.png");
+  background-image: url("../images/service.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
